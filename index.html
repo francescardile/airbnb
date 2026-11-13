@@ -275,6 +275,12 @@ h3{font:600 1.05rem/1.35 var(--f-body)}
 <section id="sec-nuki">
   <h2 data-i="nukiT"></h2>
   <div class="block">
+    <h3 data-i="nsT"></h3>
+    <ol class="steps"><li data-i="ns1"></li><li data-i="ns2"></li><li data-i="ns3"></li><li data-i="ns4"></li><li data-i="ns5"></li></ol>
+    <p class="note" data-i="nsNote"></p>
+  </div>
+  <div class="block">
+    <h3 data-i="noT"></h3>
     <ol class="steps"><li data-i="nk1"></li><li data-i="nk2"></li><li data-i="nk3"></li></ol>
     <p class="mute" data-i="nkPh"></p>
     <div class="pair tall">
@@ -608,6 +614,11 @@ T.it.pwNo="Nel link che vi abbiamo mandato su Airbnb";
 T.fr.pwNo="Dans le lien que nous vous avons envoyé sur Airbnb";
 T.es.pwNo="En el enlace que os enviamos por Airbnb";
 T.de.pwNo="Im Link, den wir Ihnen über Airbnb geschickt haben";
+Object.assign(T.it,{"nsT": "Prima di arrivare: attiva l'accesso", "ns1": "Scarica l'app <b>Nuki Smart Lock</b> (App Store o Google Play).", "ns2": "Attiva il Bluetooth sul telefono.", "ns3": "Apri l'app Nuki e nel menu tocca <b>«Inserisci codice di invito»</b>.", "ns4": "Inserisci i <b>due codici di invito personali</b> che ti abbiamo mandato nel messaggio su Airbnb: uno per il portone, uno per la porta dell'appartamento.", "ns5": "Le due serrature compariranno nell'app: sono pronte da usare per tutto il soggiorno.", "nsNote": "Ti consigliamo di farlo prima di arrivare, con calma e con la connessione internet: davanti alla porta basterà il Bluetooth.", "noT": "Per aprire le porte"});
+Object.assign(T.en,{"nsT": "Before you arrive: set up access", "ns1": "Download the <b>Nuki Smart Lock</b> app (App Store or Google Play).", "ns2": "Turn on Bluetooth on your phone.", "ns3": "Open the Nuki app and in the menu tap <b>“Enter invitation code”</b>.", "ns4": "Enter the <b>two personal invitation codes</b> we sent you in the Airbnb message: one for the building door, one for the apartment door.", "ns5": "Both locks will appear in the app, ready to use for your whole stay.", "nsNote": "We suggest doing this before you arrive, calmly and with an internet connection: at the door you'll only need Bluetooth.", "noT": "Opening the doors"});
+Object.assign(T.fr,{"nsT": "Avant d'arriver : activez l'accès", "ns1": "Téléchargez l'application <b>Nuki Smart Lock</b> (App Store ou Google Play).", "ns2": "Activez le Bluetooth sur votre téléphone.", "ns3": "Ouvrez l'application Nuki et, dans le menu, touchez <b>« Saisir le code d'invitation »</b>.", "ns4": "Saisissez les <b>deux codes d'invitation personnels</b> envoyés dans notre message Airbnb : un pour la porte de l'immeuble, un pour la porte de l'appartement.", "ns5": "Les deux serrures apparaîtront dans l'application, prêtes pour tout votre séjour.", "nsNote": "Nous vous conseillons de le faire avant d'arriver, tranquillement et avec une connexion internet : devant la porte, le Bluetooth suffira.", "noT": "Pour ouvrir les portes"});
+Object.assign(T.es,{"nsT": "Antes de llegar: activa el acceso", "ns1": "Descarga la app <b>Nuki Smart Lock</b> (App Store o Google Play).", "ns2": "Activa el Bluetooth del móvil.", "ns3": "Abre la app Nuki y en el menú pulsa <b>«Introducir código de invitación»</b>.", "ns4": "Introduce los <b>dos códigos de invitación personales</b> que te enviamos en el mensaje de Airbnb: uno para el portal y otro para la puerta del apartamento.", "ns5": "Las dos cerraduras aparecerán en la app, listas para toda la estancia.", "nsNote": "Te recomendamos hacerlo antes de llegar, con calma y con conexión a internet: delante de la puerta solo necesitarás el Bluetooth.", "noT": "Para abrir las puertas"});
+Object.assign(T.de,{"nsT": "Vor der Anreise: Zugang einrichten", "ns1": "Laden Sie die App <b>Nuki Smart Lock</b> herunter (App Store oder Google Play).", "ns2": "Schalten Sie Bluetooth am Handy ein.", "ns3": "Öffnen Sie die Nuki-App und tippen Sie im Menü auf <b>„Einladungscode eingeben“</b>.", "ns4": "Geben Sie die <b>zwei persönlichen Einladungscodes</b> ein, die wir Ihnen in der Airbnb-Nachricht geschickt haben: einen für die Haustür, einen für die Wohnungstür.", "ns5": "Beide Schlösser erscheinen in der App und sind für den ganzen Aufenthalt bereit.", "nsNote": "Am besten erledigen Sie das vor der Anreise, in Ruhe und mit Internetverbindung: An der Tür brauchen Sie dann nur Bluetooth.", "noT": "Türen öffnen"});
 // Mappa: stessa proiezione usata per disegnare mappa-vie.svg
 const HOMEPOS=[41.89809,12.47930];
 const LAT1=41.9140,LON0=12.4500,CS=Math.cos(41.897*Math.PI/180),KM=1000/((12.4900-LON0)*CS);
