@@ -1,0 +1,6 @@
+# Solo il sito va su GitHub: index.html, mappa-vie.js e le foto usate
+.DS_Store
+.assetsignore
+COME-MODIFICARE.md
+mappa-vie.svg
+foto/vista.jpg

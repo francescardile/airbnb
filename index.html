@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<title>Beato Angelico Luxury Apartment</title>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+/* Layout: a calm personal letter from the hosts. Warm plaster page, classical italic headings,
+   photos in thin white mounts, handwriting only for the greeting, small notes and the signature. */
+:root{
+  --paper:#f6f1e8; --paper-2:#fffcf6; --rule:#e3d9c8; --ink:#27231f; --ink-soft:#6e655b;
+  --accent:#9a5b2e; --door:#1f4d3a; --note:#fbf3df; --note-line:#e6d2a3; --photo:#ffffff; --shadow:rgba(60,40,20,.12);
+  --map-bg:#f3ede2; --map-water:#cddce2; --map-park:#e0e6cf; --map-square:#ebe2d1; --map-foot:#e0d6c4; --map-minor:#d2c6b0; --map-major:#bba98a;
+  --k-sight:#9a5b2e; --k-eat:#1f4d3a; --k-ice:#b0476e; --k-super:#4f6274; --k-drink:#8a6d1f; --k-uniq:#6a4c93; --k-bf:#2e7d8c;
+  --f-hand:"Caveat","Bradley Hand",cursive;
+  --f-display:"Cormorant Garamond","Garamond",Georgia,serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#1b1a18; --paper-2:#24221f; --rule:#3a352e; --ink:#ede6da; --ink-soft:#b3a999;
+  --accent:#e0a575; --door:#7cc4a0; --note:#2e2a20; --note-line:#5c4e2c; --photo:#2f2c27; --shadow:rgba(0,0,0,.4);
+  --map-bg:#211f1c; --map-water:#22323a; --map-park:#25291f; --map-square:#2a2722; --map-foot:#2f2b25; --map-minor:#3d372e; --map-major:#5a5040;
+  --k-sight:#c0773f; --k-eat:#2f7a5a; --k-ice:#c05a82; --k-super:#5f7488; --k-drink:#a6852a; --k-uniq:#8a6bb8; --k-bf:#4aa3b3; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1b1a18; --paper-2:#24221f; --rule:#3a352e; --ink:#ede6da; --ink-soft:#b3a999;
+  --accent:#e0a575; --door:#7cc4a0; --note:#2e2a20; --note-line:#5c4e2c; --photo:#2f2c27; --shadow:rgba(0,0,0,.4);
+  --map-bg:#211f1c; --map-water:#22323a; --map-park:#25291f; --map-square:#2a2722; --map-foot:#2f2b25; --map-minor:#3d372e; --map-major:#5a5040;
+  --k-sight:#c0773f; --k-eat:#2f7a5a; --k-ice:#c05a82; --k-super:#5f7488; --k-drink:#a6852a; --k-uniq:#8a6bb8; --k-bf:#4aa3b3; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;color:var(--ink);font:17px/1.65 var(--f-body);background:var(--paper)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+a{color:var(--accent)}
+.page{max-width:620px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+
+.langs{display:flex;gap:14px;flex-wrap:wrap;padding-block:18px 0}
+.langs button{font:600 .8rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:none;border:0;border-bottom:1.5px solid transparent;padding:6px 0;min-height:36px;cursor:pointer}
+.langs button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+.hero{padding-block:26px 8px;display:grid;gap:8px}
+.hero .hi{font:italic 500 clamp(3rem,10vw,4.4rem)/1 var(--f-display);color:var(--ink)}
+.hero .sub{font:italic 500 clamp(1.9rem,8vw,2.5rem)/1.1 var(--f-display);color:var(--ink)}
+.hero h1{font:600 .78rem/1.5 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
+.hero .addr{font-size:.95rem;color:var(--ink-soft)}
+.snaps{display:grid;gap:10px;margin:22px 0 4px}
+.pol{margin:0;background:var(--photo);padding:6px 6px 0;box-shadow:0 10px 24px -14px var(--shadow),0 0 0 1px var(--rule)}
+.pol img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--rule)}
+.pol figcaption{font:italic 500 1.05rem/1.2 var(--f-display);color:var(--ink-soft);padding:8px 4px 10px;text-align:center}
+.note{font:italic 400 1.02rem/1.55 var(--f-body);color:var(--ink);border-left:2px solid var(--rule);padding-left:14px}
+.snaps .note{grid-column:1/-1;margin-top:8px}
+
+.quick{display:flex;flex-wrap:wrap;gap:10px;padding-block:18px 6px}
+.quick a{font:600 .95rem var(--f-body);text-decoration:none;padding:11px 18px;border-radius:999px;border:1.5px solid var(--door);color:var(--door)}
+.quick a.red{background:var(--door);color:var(--paper-2)}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 8px}
+.tile{display:grid;gap:2px;align-content:start;text-decoration:none;color:var(--ink);background:var(--paper-2);border:1px solid var(--rule);border-radius:10px;padding:14px 14px 16px;min-height:92px;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:var(--accent);transform:translateY(-1px)}
+.tile .tt{font:italic 600 1.35rem/1.1 var(--f-display)}
+.tile .th{font-size:.85rem;line-height:1.35;color:var(--ink-soft)}
+.tile.key{background:var(--note);border-color:var(--note-line)}
+.tile.wide{grid-column:1/-1}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(3,1fr)}.tile.wide{grid-column:auto}}
+#view[hidden],#home[hidden]{display:none}
+#view section{display:none;padding-top:8px}
+#view section.on{display:block}
+.back{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font:600 .82rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;min-height:40px}
+.back:hover{color:var(--accent)}
+.side{display:none}
+.pn{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--rule);margin-top:40px;padding:16px 0 50px}
+.pn a{text-decoration:none;color:var(--ink-soft);font-size:.9rem;display:grid;gap:2px;max-width:48%}
+.pn a b{font:italic 600 1.25rem/1.1 var(--f-display);color:var(--ink)}
+.pn a.nx{text-align:right;margin-left:auto}
+.pn a:hover b{color:var(--accent)}
+@media (min-width:980px){
+  .wrapv{max-width:980px;margin:0 auto;display:grid;grid-template-columns:220px 1fr;gap:48px;padding:0 24px}
+  .wrapv>.page{padding:0;max-width:640px;margin:0}
+  .side{display:grid;align-content:start;gap:2px;position:sticky;top:20px;padding-top:30px;max-height:100vh}
+  .side a{text-decoration:none;color:var(--ink-soft);padding:7px 12px;border-radius:8px;font-size:.95rem}
+  .side a:hover{color:var(--ink);background:var(--paper-2)}
+  .side a.on{color:var(--ink);background:var(--paper-2);box-shadow:inset 3px 0 0 var(--accent)}
+  .side .home-l{font:italic 600 1.3rem var(--f-display);color:var(--ink);margin-bottom:8px}
+  .back{display:none}
+}
+.uq{display:grid;gap:12px;margin-top:8px}
+.uq article{background:var(--paper-2);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;display:grid;gap:6px}
+.uq h3{font:italic 600 1.45rem/1.15 var(--f-display);display:flex;gap:10px;align-items:center}
+.uq p{color:var(--ink-soft)}
+.uq .row{margin-top:4px}
+.btn.sm{min-height:38px;padding:7px 14px;font-size:.88rem}
+section{padding-block:20px 4px}
+section>h2{font:italic 600 clamp(2.1rem,9vw,2.6rem)/1.05 var(--f-display);color:var(--ink);margin-bottom:18px}
+section>h2::after{content:"";display:block;width:36px;height:1.5px;background:var(--accent);margin-top:12px}
+h3{font:600 1.05rem/1.35 var(--f-body)}
+.block{display:grid;gap:8px;padding-block:4px 20px}
+.block+.block{border-top:1px solid var(--rule);padding-top:20px}
+.steps{margin:0;padding-left:1.3em;display:grid;gap:6px}
+.steps li::marker{font:italic 600 1.15rem var(--f-display);color:var(--accent)}
+.mute{color:var(--ink-soft);font-size:.95rem}
+
+.postits{display:grid;gap:12px}
+.postit{background:var(--note);border:1px solid var(--note-line);border-radius:4px;padding:16px 18px;display:grid;gap:4px}
+.postit strong{font:italic 600 1.35rem/1.2 var(--f-display);color:var(--ink)}
+
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px 0 6px}
+.pair .pol img{aspect-ratio:3/4}
+.pair.tall .pol img{aspect-ratio:4/5;background:#111}
+
+.strip{display:flex;gap:12px;overflow-x:auto;padding:4px 0 22px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.strip .pol{flex:none;width:min(66vw,240px);scroll-snap-align:start}
+
+.ticket{background:var(--paper-2);border:1px solid var(--rule);border-radius:6px;padding:18px 20px;display:grid;gap:12px}
+.wifi{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline;margin:0}
+.wifi dt{font:600 .75rem var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.wifi dd{margin:0;font-weight:600;font-size:1.2rem;word-break:break-all}
+.btn{font:600 .95rem var(--f-body);color:var(--paper-2);background:var(--door);border:0;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-self:start}
+.btn.ghost{background:transparent;color:var(--door);border:1.5px solid var(--door)}
+
+.mapbar{margin:14px 0 8px;overflow-x:auto;scrollbar-width:none}
+.seg{display:flex;gap:6px;flex-wrap:nowrap}
+.seg button{flex:none;font:600 .82rem var(--f-body);color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--rule);border-radius:999px;padding:6px 12px;min-height:34px;cursor:pointer}
+.seg button[aria-pressed="true"]{color:var(--paper-2);background:var(--ink);border-color:var(--ink)}
+.map{position:relative;background:var(--map-bg);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.map svg{display:block;width:100%;height:auto;aspect-ratio:1/1}
+.map .zoom{position:absolute;right:8px;bottom:8px}
+.map .zoom button{box-shadow:0 2px 8px var(--shadow)}
+.m-water{fill:var(--map-water)} .m-park{fill:var(--map-park)} .m-square{fill:var(--map-square)}
+.m-foot{stroke:var(--map-foot);stroke-width:.7} .m-minor{stroke:var(--map-minor);stroke-width:1.5} .m-major{stroke:var(--map-major);stroke-width:2.8}
+.mk{cursor:pointer} .mk circle{stroke:var(--map-bg);stroke-width:1.5}
+.mk text,.home text{text-anchor:middle;font-family:var(--f-body);font-weight:700}
+.mk text{fill:#fff;pointer-events:none}
+.mk.on circle{stroke:var(--ink);stroke-width:2.5}
+.home rect{fill:var(--ink)} .home path{stroke:var(--map-bg)} .home text{fill:var(--ink);font-style:italic;font-family:var(--f-display);font-size-adjust:none;paint-order:stroke;stroke:var(--map-bg);stroke-width:4px}
+.c-sight{--c:var(--k-sight)} .c-eat{--c:var(--k-eat)} .c-ice{--c:var(--k-ice)} .c-super{--c:var(--k-super)} .c-drink{--c:var(--k-drink)} .c-uniq{--c:var(--k-uniq)} .c-bf{--c:var(--k-bf)} .c-all{--c:var(--ink)}
+.mk circle{fill:var(--c)} .lead{stroke:var(--c);opacity:.8} .pin{fill:var(--c)}
+.badge{flex:none;display:inline-grid;place-content:center;min-width:24px;height:24px;padding:0 5px;border-radius:999px;background:var(--c);color:#fff;font:700 .78rem var(--f-body);font-variant-numeric:tabular-nums;align-self:center}
+.seg button.c-sight[aria-pressed="true"],.seg button.c-eat[aria-pressed="true"],.seg button.c-ice[aria-pressed="true"],.seg button.c-super[aria-pressed="true"],.seg button.c-drink[aria-pressed="true"],.seg button.c-uniq[aria-pressed="true"],.seg button.c-bf[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}
+.mapinfo{display:flex;align-items:center;gap:12px;margin-top:10px;padding:12px 14px;background:var(--paper-2);border:1px solid var(--rule);border-radius:8px}
+.mapinfo[hidden]{display:none}
+.mapinfo .nm{flex:1;min-width:0;font-weight:600;line-height:1.3}
+.mapinfo .nm small{display:block;font-weight:400;color:var(--ink-soft);font-size:.85rem}
+.small{font-size:.82rem;margin-top:8px}
+.places li{cursor:pointer}
+.places li.on .nm{color:var(--accent)}
+.cat{font:italic 600 1.45rem/1.1 var(--f-display);color:var(--ink);margin:26px 0 6px}
+.places{list-style:none;margin:0;padding:0}
+.places li{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--rule)}
+.places .nm{font-weight:600;min-width:0}
+.places .nm small{font:italic 500 1rem var(--f-display);color:var(--ink-soft);margin-left:6px}
+.places .dots{flex:1}
+.places a{flex:none;font:600 .85rem var(--f-body);text-decoration:none;color:var(--door)}
+
+.chat{margin:28px 0 8px;padding:18px;border:1px solid var(--rule);border-radius:10px;display:grid;gap:8px;justify-items:start;background:var(--paper-2)}
+.chat p{margin:0;font-size:.88rem;color:var(--ink-soft)}
+.chat.inctc{margin-top:18px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:99}
+.op{display:block;font:italic 400 .9rem/1.45 var(--f-body);color:var(--ink-soft);margin-top:3px;letter-spacing:0;text-transform:none}
+.op.more{color:var(--k-uniq);text-decoration:none;font-style:normal;font-size:.85rem}
+/* Senza script (es. anteprima file su iPhone): tutte le sezioni una sotto l'altra */
+:root:not(.js) #view{display:block!important}
+:root:not(.js) #view section{display:block}
+:root:not(.js) .side,:root:not(.js) .back,:root:not(.js) #pn,:root:not(.js) .tiles,:root:not(.js) .quick,:root:not(.js) .langs,:root:not(.js) .mapbar,:root:not(.js) .map,:root:not(.js) .map+p,:root:not(.js) #home .chat{display:none!important}
+#pw.pwno{font:italic 400 1rem var(--f-body);color:var(--ink-soft);letter-spacing:0}
+.check{list-style:none;margin:0;padding:0;display:grid}
+.check label{display:flex;gap:14px;align-items:flex-start;cursor:pointer;padding:9px 0;border-bottom:1px solid var(--rule)}
+.check input{width:20px;height:20px;flex:none;margin:4px 0 0;accent-color:var(--door);cursor:pointer}
+.check input:checked+span{color:var(--ink-soft);text-decoration:line-through}
+.time{font-weight:700;color:var(--ink)}
+
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.person{display:grid;gap:6px}
+.person h3{font:italic 600 1.7rem/1 var(--f-display)}
+.num{font-weight:600;font-size:1.1rem;font-variant-numeric:tabular-nums}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.sign{padding-block:50px 60px;text-align:center;display:grid;gap:6px}
+.sign .s{font:italic 500 1.9rem/1 var(--f-display);color:var(--ink)}
+.sign p{color:var(--ink-soft);font-size:.92rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+
+<div class="page">
+  <div class="langs" role="group" aria-label="Language">
+    <button data-l="it">Italiano</button><button data-l="en">English</button><button data-l="fr">Français</button><button data-l="es">Español</button><button data-l="de">Deutsch</button>
+  </div>
+</div>
+
+<div class="page" id="home">
+  <header class="hero">
+    <div class="hi">Ciao!</div>
+    <div class="sub" data-i="sub"></div>
+    <h1>Roma Centralissimo · Beato Angelico Luxury Apartment</h1>
+    <p class="addr">Via Beato Angelico 20 · 00186 Roma</p>
+    <div class="snaps">
+      <figure class="pol"><img src="foto/soggiorno.jpg" alt="Living room with wooden ceiling"><figcaption data-i="capHome"></figcaption></figure>
+      <p class="note" data-i="heroNote"></p>
+    </div>
+    <div class="quick">
+      <a class="red" href="#nuki" data-i="qOpen"></a>
+      <a href="#contacts" data-i="qCall"></a>
+    </div>
+  </header>
+  <nav class="tiles" aria-label="Sections">
+    <a class="tile key" href="#important"><span class="tt" data-i="nImp"></span><span class="th" data-i="hImp"></span></a>
+    <a class="tile " href="#arrive"><span class="tt" data-i="nArr"></span><span class="th" data-i="hArr"></span></a>
+    <a class="tile " href="#nuki"><span class="tt" data-i="nNuki"></span><span class="th" data-i="hNuki"></span></a>
+    <a class="tile " href="#wifi"><span class="tt">Wi‑Fi</span><span class="th" data-i="hWifi"></span></a>
+    <a class="tile " href="#house"><span class="tt" data-i="nHouse"></span><span class="th" data-i="hHouse"></span></a>
+    <a class="tile " href="#rules"><span class="tt" data-i="nRules"></span><span class="th" data-i="hRules"></span></a>
+    <a class="tile " href="#around"><span class="tt" data-i="nAround"></span><span class="th" data-i="hAround"></span></a>
+    <a class="tile " href="#unique"><span class="tt" data-i="nUniq"></span><span class="th" data-i="hUniq"></span></a>
+    <a class="tile " href="#checkout"><span class="tt" data-i="nOut"></span><span class="th" data-i="hOut"></span></a>
+    <a class="tile " href="#contacts"><span class="tt" data-i="nCtc"></span><span class="th" data-i="hCtc"></span></a>
+  </nav>
+  <div class="chat"><a class="btn" href="https://www.airbnb.com/guest/messages/" target="_blank" rel="noopener"><span data-i="chatB"></span>&nbsp;→</a><p data-i="chatS"></p></div>
+  <footer class="sign">
+    <div class="s">Luciana</div>
+    <p data-i="signNote"></p>
+  </footer>
+</div>
+
+<div class="wrapv" id="view" hidden>
+  <nav class="side" aria-label="Sections">
+    <a class="home-l" href="#">Beato Angelico</a>
+    <a href="#important" data-s="important"><span data-i="nImp"></span></a>
+    <a href="#arrive" data-s="arrive"><span data-i="nArr"></span></a>
+    <a href="#nuki" data-s="nuki"><span data-i="nNuki"></span></a>
+    <a href="#wifi" data-s="wifi">Wi‑Fi</a>
+    <a href="#house" data-s="house"><span data-i="nHouse"></span></a>
+    <a href="#rules" data-s="rules"><span data-i="nRules"></span></a>
+    <a href="#around" data-s="around"><span data-i="nAround"></span></a>
+    <a href="#unique" data-s="unique"><span data-i="nUniq"></span></a>
+    <a href="#checkout" data-s="checkout"><span data-i="nOut"></span></a>
+    <a href="#contacts" data-s="contacts"><span data-i="nCtc"></span></a>
+  </nav>
+  <main class="page">
+  <a class="back" href="#">← <span data-i="allSec"></span></a>
+<section id="sec-important">
+  <h2 data-i="nImp"></h2>
+  <div class="postits">
+    <div class="postit"><strong data-i="a2t"></strong><p data-i="a2"></p></div>
+    <div class="postit"><strong data-i="a1t"></strong><p data-i="a1"></p></div>
+    <div class="postit"><strong data-i="keysT"></strong><p data-i="keys"></p></div>
+    <div class="postit"><strong data-i="a3t"></strong><p data-i="a3"></p></div>
+  </div>
+</section>
+<section id="sec-arrive">
+  <h2 data-i="nArr"></h2>
+  <div class="block">
+    <h3 data-i="trT"></h3>
+    <ul class="steps"><li data-i="tr1"></li><li data-i="tr2"></li><li data-i="tr3"></li><li data-i="tr4"></li></ul>
+    <p class="mute" data-i="tr5"></p>
+    <p class="mute" data-i="tr6"></p>
+  </div>
+  <div class="block">
+    <h3 data-i="arrT"></h3>
+    <ol class="steps"><li data-i="arr1"></li><li data-i="arr2"></li><li data-i="arr3"></li></ol>
+    <div class="pair">
+      <figure class="pol"><img src="foto/building.jpg" alt="Building door, Via Beato Angelico 20" loading="lazy"><figcaption data-i="capB"></figcaption></figure>
+      <figure class="pol"><img src="foto/door.jpg" alt="Apartment door, first floor" loading="lazy"><figcaption data-i="capD"></figcaption></figure>
+    </div>
+    <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Via+Beato+Angelico+20,+00186+Roma" target="_blank" rel="noopener" data-i="openMap"></a>
+  </div>
+  <div class="block">
+    <h3 data-i="liftT"></h3>
+    <p data-i="lift"></p>
+  </div>
+</section>
+<section id="sec-nuki">
+  <h2 data-i="nukiT"></h2>
+  <div class="block">
+    <ol class="steps"><li data-i="nk1"></li><li data-i="nk2"></li><li data-i="nk3"></li></ol>
+    <p class="mute" data-i="nkPh"></p>
+    <div class="pair tall">
+      <figure class="pol"><img src="foto/nuki1.jpg" alt="Nuki app: swipe up the menu" loading="lazy"><figcaption data-i="capN1"></figcaption></figure>
+      <figure class="pol"><img src="foto/nuki2.jpg" alt="Nuki app: Open door button" loading="lazy"><figcaption data-i="capN2"></figcaption></figure>
+    </div>
+    <p class="note" data-i="nkNote"></p>
+    <div class="postit"><strong data-i="keysT"></strong><p data-i="keys"></p></div>
+  </div>
+</section>
+<section id="sec-wifi">
+  <h2>Wi‑Fi</h2>
+  <div class="ticket">
+    <dl class="wifi"><dt data-i="net"></dt><dd>Tiscali - Angelico</dd><dt>Password</dt><dd id="pw"></dd></dl>
+    <button class="btn" id="copy" type="button" data-i="copy"></button>
+    <p class="mute" data-i="wifiNote"></p>
+  </div>
+</section>
+<section id="sec-house">
+  <h2 data-i="nHouse"></h2>
+  <div class="strip" aria-label="Photos of the apartment">
+    <figure class="pol"><img src="foto/soggiorno.jpg" alt="" loading="lazy"><figcaption data-i="gLiving"></figcaption></figure>
+    <figure class="pol"><img src="foto/cucina.jpg" alt="" loading="lazy"><figcaption data-i="gKitchen"></figcaption></figure>
+    <figure class="pol"><img src="foto/camera.jpg" alt="" loading="lazy"><figcaption data-i="gBed"></figcaption></figure>
+    <figure class="pol"><img src="foto/bagno.jpg" alt="" loading="lazy"><figcaption data-i="gBath"></figcaption></figure>
+    <figure class="pol"><img src="foto/via.jpg" alt="" loading="lazy"><figcaption data-i="gStreet"></figcaption></figure>
+  </div>
+  <div class="block"><h3 data-i="acT"></h3><p data-i="ac"></p></div>
+  <div class="block"><h3 data-i="hwT"></h3><p data-i="hw"></p></div>
+  <div class="block"><h3 data-i="sockT"></h3><p data-i="sock"></p></div>
+  <div class="block"><h3 data-i="wmT"></h3><p data-i="wm"></p></div>
+  <div class="block"><h3 data-i="dwT"></h3><p data-i="dw"></p></div>
+  <div class="block"><h3>Alexa</h3><p data-i="alexa"></p></div>
+  <div class="block"><h3 data-i="manT"></h3><p data-i="man"></p></div>
+</section>
+<section id="sec-rules">
+  <h2 data-i="nRules"></h2>
+  <ul class="steps" id="rulelist"></ul>
+</section>
+<section id="sec-around">
+  <h2 data-i="nAround"></h2>
+  <p data-i="aroundIntro"></p>
+  <div class="mapbar"><div class="seg" id="mapfilters"></div></div>
+  <div class="map">
+    <svg id="mapsvg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice"><g id="streets"></g><g id="marks"></g></svg>
+    <div class="seg zoom" id="mapzoom"></div>
+  </div>
+  <div class="mapinfo" id="mapinfo" hidden></div>
+  <p class="mute small" data-i="mapNote"></p>
+  <div id="placelist"></div>
+</section>
+<section id="sec-unique">
+  <h2 data-i="nUniq"></h2>
+  <p data-i="uniqIntro"></p>
+  <div class="uq" id="uniqlist"></div>
+</section>
+<section id="sec-checkout">
+  <h2 data-i="nOut"></h2>
+  <p data-i="coIntro"></p>
+  <ul class="check" id="checklist" style="margin-top:12px"></ul>
+  <p class="note" data-i="coEnd" style="margin-top:14px"></p>
+</section>
+<section id="sec-contacts">
+  <h2 data-i="nCtc"></h2>
+  <div class="postit"><strong>Luciana</strong><p data-i="ctcAir"></p></div>
+  <div class="chat inctc"><a class="btn" href="https://www.airbnb.com/guest/messages/" target="_blank" rel="noopener"><span data-i="chatB"></span>&nbsp;→</a><p data-i="chatS"></p></div>
+  <div class="block" style="margin-top:22px">
+    <h3 data-i="emT"></h3>
+    <p><span data-i="em112"></span>: <span class="num">112</span></p>
+    <p><span data-i="emTaxi"></span>: <span class="num">06 3570</span> · <span class="num">06 6645</span></p>
+  </div>
+</section>
+  <nav class="pn" id="pn"></nav>
+  <div class="chat"><a class="btn" href="https://www.airbnb.com/guest/messages/" target="_blank" rel="noopener"><span data-i="chatB"></span>&nbsp;→</a><p data-i="chatS"></p></div>
+  </main>
+</div>
+
+<script src="mappa-vie.js"></script>
+<script>
+const T={
+en:{nRules:"House rules",rules:["Up to 4 guests overnight","No pets","No smoking, including vaping and e-cigarettes","No parties or events","No commercial photography or filming"],
+trT:"Getting here",tr1:"<b>Taxi from Fiumicino airport:</b> fixed fare €50 to the city centre.",tr2:"<b>Train:</b> Leonardo Express from the airport to Roma Termini.",tr3:"<b>From Termini:</b> metro line A to Barberini, then bus 62, 85 or 492 to the Corso/Minghetti stop. Or bus 70 to Plebiscito or Torre Argentina.",tr4:"<b>Bus 64</b> (Termini – Torre Argentina – Vatican) is known for pickpockets: keep an eye on your bags.",tr5:"Download the Moovit app for live routes: in Rome buses can be diverted for state visits or demonstrations.",tr6:"The house is inside the ZTL (limited traffic zone): only electric, authorised or car-sharing vehicles (Enjoy, Share Now) can drive in.",welcome:"Welcome to Rome",qOpen:"Open the door",qCall:"Contact us",nImp:"Keep in mind",nArr:"Getting here",nNuki:"Nuki",nHouse:"House guide",nAround:"Our favourite places",nOut:"Check-out",nCtc:"Contacts",
+a1t:"Nuki: swipe up, then tap “Open door”",a1:"Do not tap “Unlock”: the door will not open. Swipe the menu up and tap the yellow “Open door” button.",
+a2t:"The apartment is on the 1st floor",a2:"In Italy the 1st floor is one floor above the ground floor (ground floor = 0).",
+a3t:"Weak phone signal inside",a3:"The building dates back to the 1200s and its medieval walls block the phone signal in parts of the house. Use the Wi‑Fi to call and message.",
+arrT:"From the street to your door",arr1:"Find the building door at Via Beato Angelico 20 (photo below).",arr2:"Open it with the Nuki app (see the Nuki section).",arr3:"Go up to the 1st floor: the apartment door is the dark green one. Open it with Nuki the same way.",
+capB:"Building door, n. 20",capD:"Apartment door, 1st floor",openMap:"Open in Google Maps",
+liftT:"Freight elevator, for your luggage",lift:"The elevator is a freight lift, handy for bringing suitcases up at check-in and down at check-out. Keep the floor button pressed for the whole ride: button 1 to go up (1st floor, where the apartment is), button 0 to go down to the ground floor.",
+nukiT:"How to use Nuki",nk1:"Open the Nuki app and select “Lockapartment Beato Angelico”.",nk2:"Swipe the bottom menu up (grab the small bar, photo 1).",nk3:"Tap the yellow “Open door” button (photo 2). The door unlocks and opens. It works the same for both doors.",
+capN1:"1 · Swipe the menu up",capN2:"2 · Tap “Open door”",nkNote:"Do not use “Unlock” or slide the lock: only “Open door” opens the door.",
+net:"Network",copy:"Copy password",copied:"Copied",wifiNote:"Wi‑Fi works everywhere in the house, even where the phone signal does not.",
+acT:"Air conditioning and heating",ac:"Cooling and heating are controlled from the thermostat on the bedroom wall. Please switch the air conditioning off when you leave the house.",
+hwT:"Hot water and gas",hw:"Hot water comes from a gas boiler (the meter is outside the house). In the kitchen, the steel knob opens and closes the gas.",
+sockT:"Electric sockets",sock:"The sockets have a sliding glass cover: slide it up, then plug in as usual.",
+wmT:"Washing machine",wm:"In the ante-bathroom, inside the cabinet under the window. The instructions are in the cabinet next to it.",
+dwT:"Dishwasher",dw:"In the kitchen. We left some capsules for you.",
+alexa:"Next to the TV in the living room. She understands English and Italian.",
+manT:"Appliance manuals",man:"In the drawer of the cabinet under the bedroom window.",
+aroundIntro:"Our favourite places nearby. “Route” opens Google Maps with walking directions from the apartment.",
+mapNote:"Simplified map: distances are approximate. Use “Route” for the exact path.",
+cats:{sight:"Sights",super:"Supermarkets",bf:"Breakfast",eat:"Where to eat",ice:"Gelato",drink:"Aperitivo with a view"},route:"Route",gf:"gluten‑free options",vg:"vegan",
+coIntro:"Check-out is by <span class=\"time\">10:00</span>. Before you leave:",
+co:["Switch off the air conditioning","Take out the rubbish: the collection point is in Piazza del Collegio Romano, next to the high school","Close the shutters","Switch off all the lights","A small favour: please put the dirty dishes in the dishwasher and start it","Leave the keys on the desk in the living room","Close the door behind you"],
+coEnd:"We hope you enjoyed your stay!",call:"Call",emT:"Useful numbers",em112:"Emergency (police, ambulance, fire)",emTaxi:"Taxi Roma",foot:"Grazie and enjoy Rome · Luciana"},
+it:{nRules:"Regole della casa",rules:["Massimo 4 ospiti con pernottamento","Niente animali domestici","Vietato fumare, anche svapo e sigarette elettroniche","Vietato organizzare feste o eventi","Vietate foto e riprese a fini commerciali"],
+trT:"Come arrivare",tr1:"<b>Taxi dall’aeroporto di Fiumicino:</b> tariffa fissa di 50 € fino al centro.",tr2:"<b>Treno:</b> Leonardo Express dall’aeroporto alla stazione Roma Termini.",tr3:"<b>Da Termini:</b> metro linea A fino a Barberini, poi autobus 62, 85 o 492 fino alla fermata Corso/Minghetti. Oppure autobus 70 fino a Plebiscito o Torre Argentina.",tr4:"<b>L’autobus 64</b> (Termini – Torre Argentina – Vaticano) è pieno di borseggiatori: fai attenzione alle borse.",tr5:"Scarica l’app Moovit per i percorsi in tempo reale: a Roma gli autobus possono essere deviati per visite di capi di Stato o manifestazioni.",tr6:"La casa è nella ZTL: possono entrare solo auto elettriche, autorizzate o in car sharing (Enjoy, Share Now).",welcome:"Benvenuti a Roma",qOpen:"Apri la porta",qCall:"Contattaci",nImp:"Da tenere a mente",nArr:"Come arrivare",nNuki:"Nuki",nHouse:"Guida della casa",nAround:"I nostri posti",nOut:"Check-out",nCtc:"Contatti",
+a1t:"Nuki: scorri in su, poi tocca “Aprire porta”",a1:"Non toccare “Sbloccare”: la porta non si apre. Scorri il menu verso l’alto e tocca il tasto giallo “Aprire porta”.",
+a2t:"L’appartamento è al 1° piano",a2:"Il 1° piano è sopra il piano terra (piano terra = 0).",
+a3t:"Poco segnale telefonico in casa",a3:"La casa risale al 1200 e i muri medievali bloccano il segnale in alcune stanze. Usa il Wi‑Fi per chiamare e scrivere.",
+arrT:"Dalla strada alla porta di casa",arr1:"Trova il portone in Via Beato Angelico 20 (foto sotto).",arr2:"Aprilo con l’app Nuki (vedi la sezione Nuki).",arr3:"Sali al 1° piano: la porta di casa è quella verde scuro. Si apre con Nuki allo stesso modo.",
+capB:"Portone, n. 20",capD:"Porta di casa, 1° piano",openMap:"Apri in Google Maps",
+liftT:"Montacarichi per le valigie",lift:"L’ascensore è un montacarichi, comodo per portare le valigie su al check-in e giù al check-out. Tieni premuto il tasto del piano per tutta la corsa: tasto 1 per salire (1° piano, dove si trova l’appartamento), tasto 0 per scendere al piano terra.",
+nukiT:"Come usare Nuki",nk1:"Apri l’app Nuki e seleziona “Lockapartment Beato Angelico”.",nk2:"Trascina verso l’alto il menu in basso (la barretta, foto 1).",nk3:"Tocca il tasto giallo “Aprire porta” (foto 2). La porta si sblocca e si apre. Funziona così per entrambe le porte.",
+capN1:"1 · Scorri il menu in su",capN2:"2 · Tocca “Aprire porta”",nkNote:"Non usare “Sbloccare” e non trascinare il lucchetto: solo “Aprire porta” apre la porta.",
+net:"Rete",copy:"Copia password",copied:"Copiata",wifiNote:"Il Wi‑Fi arriva in tutta la casa, anche dove il telefono non prende.",
+acT:"Aria condizionata e riscaldamento",ac:"Freddo e caldo si regolano dal termostato sulla parete della camera da letto. Spegni l’aria condizionata quando esci di casa.",
+hwT:"Acqua calda e gas",hw:"L’acqua calda arriva da una caldaia a gas (il contatore è fuori casa). In cucina c’è una manopola in acciaio che apre e chiude il gas.",
+sockT:"Prese elettriche",sock:"Le prese hanno uno sportellino in vetro scorrevole: fallo scorrere verso l’alto e usa la presa normalmente.",
+wmT:"Lavatrice",wm:"Nell’antibagno, nel mobile sotto la finestra. Le istruzioni sono nel mobile accanto.",
+dwT:"Lavastoviglie",dw:"In cucina. Ti abbiamo lasciato alcune capsule.",
+alexa:"Accanto alla TV in soggiorno. Capisce italiano e inglese.",
+manT:"Istruzioni degli elettrodomestici",man:"Nel cassetto del mobile sotto la finestra della camera.",
+aroundIntro:"I nostri posti preferiti qui vicino. “Percorso” apre Google Maps con il tragitto a piedi da casa.",
+mapNote:"Mappa semplificata: le distanze sono indicative. Usa “Percorso” per la strada esatta.",
+cats:{sight:"Da vedere",super:"Supermercati",bf:"Colazione",eat:"Dove mangiare",ice:"Gelato",drink:"Aperitivo con vista"},route:"Percorso",gf:"opzioni senza glutine",vg:"vegano",
+coIntro:"Il check-out è entro le <span class=\"time\">10:00</span>. Prima di partire:",
+co:["Spegni l’aria condizionata","Butta la spazzatura: il punto di raccolta è in Piazza del Collegio Romano, accanto al liceo","Chiudi le tapparelle","Spegni tutte le luci","Una cortesia: metti per favore i piatti sporchi in lavastoviglie e avviala","Lascia le chiavi sulla scrivania in soggiorno","Chiudi la porta dietro di te"],
+coEnd:"Speriamo che il soggiorno sia andato bene!",call:"Chiama",emT:"Numeri utili",em112:"Emergenze (polizia, ambulanza, vigili del fuoco)",emTaxi:"Taxi Roma",foot:"Grazie e buona Roma · Luciana"},
+fr:{nRules:"Règlement intérieur",rules:["4 personnes maximum pour la nuit","Animaux non admis","Interdit de fumer, cigarette électronique comprise","Fêtes et événements interdits","Photos et tournages commerciaux interdits"],
+trT:"Comment venir",tr1:"<b>Taxi depuis l’aéroport de Fiumicino :</b> tarif fixe de 50 € jusqu’au centre.",tr2:"<b>Train :</b> Leonardo Express de l’aéroport à la gare Roma Termini.",tr3:"<b>Depuis Termini :</b> métro ligne A jusqu’à Barberini, puis bus 62, 85 ou 492 jusqu’à l’arrêt Corso/Minghetti. Ou bus 70 jusqu’à Plebiscito ou Torre Argentina.",tr4:"<b>Le bus 64</b> (Termini – Torre Argentina – Vatican) est connu pour les pickpockets : surveillez vos sacs.",tr5:"Téléchargez l’application Moovit pour les itinéraires en temps réel : à Rome, les bus peuvent être déviés lors de visites officielles ou de manifestations.",tr6:"La maison est dans la ZTL (zone à trafic limité) : seules les voitures électriques, autorisées ou en autopartage (Enjoy, Share Now) peuvent y entrer.",welcome:"Bienvenue à Rome",qOpen:"Ouvrir la porte",qCall:"Nous contacter",nImp:"À garder en tête",nArr:"Comment venir",nNuki:"Nuki",nHouse:"Guide de la maison",nAround:"Nos adresses",nOut:"Départ",nCtc:"Contacts",
+a1t:"Nuki : glissez vers le haut, puis « Ouvrir la porte »",a1:"N’appuyez pas sur « Déverrouiller » : la porte ne s’ouvrira pas. Faites glisser le menu vers le haut et appuyez sur le bouton jaune « Ouvrir la porte ».",
+a2t:"L’appartement est au 1er étage",a2:"En Italie, le 1er étage est au-dessus du rez-de-chaussée (rez-de-chaussée = 0).",
+a3t:"Peu de réseau mobile",a3:"La maison date du XIIIe siècle et ses murs médiévaux bloquent le réseau dans certaines pièces. Utilisez le Wi‑Fi pour appeler et écrire.",
+arrT:"De la rue à votre porte",arr1:"Trouvez la porte de l’immeuble au 20 Via Beato Angelico (photo ci-dessous).",arr2:"Ouvrez-la avec l’application Nuki (voir la section Nuki).",arr3:"Montez au 1er étage : la porte de l’appartement est vert foncé. Elle s’ouvre avec Nuki de la même façon.",
+capB:"Porte de l’immeuble, n° 20",capD:"Porte de l’appartement, 1er étage",openMap:"Ouvrir dans Google Maps",
+liftT:"Monte-charge pour les valises",lift:"L’ascenseur est un monte-charge, pratique pour monter les valises à l’arrivée et les descendre au départ. Maintenez le bouton de l’étage appuyé pendant tout le trajet : bouton 1 pour monter (1er étage, où se trouve l’appartement), bouton 0 pour descendre au rez-de-chaussée.",
+nukiT:"Utiliser Nuki",nk1:"Ouvrez l’application Nuki et choisissez « Lockapartment Beato Angelico ».",nk2:"Faites glisser le menu du bas vers le haut (la petite barre, photo 1).",nk3:"Appuyez sur le bouton jaune « Ouvrir la porte » (photo 2). La porte se déverrouille et s’ouvre. C’est pareil pour les deux portes.",
+capN1:"1 · Glissez le menu vers le haut",capN2:"2 · Appuyez sur « Ouvrir la porte »",nkNote:"N’utilisez pas « Déverrouiller » : seul « Ouvrir la porte » ouvre la porte.",
+net:"Réseau",copy:"Copier le mot de passe",copied:"Copié",wifiNote:"Le Wi‑Fi couvre toute la maison, même là où le téléphone ne capte pas.",
+acT:"Climatisation et chauffage",ac:"Le froid et le chaud se règlent avec le thermostat sur le mur de la chambre. Éteignez la climatisation quand vous sortez.",
+hwT:"Eau chaude et gaz",hw:"L’eau chaude vient d’une chaudière à gaz (le compteur est à l’extérieur). Dans la cuisine, le bouton en acier ouvre et ferme le gaz.",
+sockT:"Prises électriques",sock:"Les prises ont un cache en verre coulissant : faites-le glisser vers le haut, puis branchez normalement.",
+wmT:"Lave-linge",wm:"Dans l’antichambre de la salle de bain, dans le meuble sous la fenêtre. Le mode d’emploi est dans le meuble d’à côté.",
+dwT:"Lave-vaisselle",dw:"Dans la cuisine. Nous vous avons laissé quelques capsules.",
+alexa:"À côté de la télévision du salon. Elle comprend l’anglais et l’italien.",
+manT:"Modes d’emploi",man:"Dans le tiroir du meuble sous la fenêtre de la chambre.",
+aroundIntro:"Nos adresses préférées à proximité. « Itinéraire » ouvre Google Maps avec le trajet à pied depuis l’appartement.",
+mapNote:"Carte simplifiée : distances approximatives. Utilisez « Itinéraire » pour le trajet exact.",
+cats:{sight:"À voir",super:"Supermarchés",bf:"Petit-déjeuner",eat:"Où manger",ice:"Glaces",drink:"Apéritif avec vue"},route:"Itinéraire",gf:"options sans gluten",vg:"végan",
+coIntro:"Le départ se fait avant <span class=\"time\">10h00</span>. Avant de partir :",
+co:["Éteignez la climatisation","Sortez les poubelles : le point de collecte est Piazza del Collegio Romano, à côté du lycée","Fermez les volets","Éteignez toutes les lumières","Une petite faveur : merci de mettre la vaisselle sale dans le lave-vaisselle et de le lancer","Laissez les clés sur le bureau du salon","Fermez la porte derrière vous"],
+coEnd:"Nous espérons que votre séjour s’est bien passé !",call:"Appeler",emT:"Numéros utiles",em112:"Urgences (police, ambulance, pompiers)",emTaxi:"Taxi Roma",foot:"Merci et bon séjour à Rome · Luciana"},
+es:{nRules:"Normas de la casa",rules:["Máximo 4 huéspedes para dormir","No se admiten mascotas","Prohibido fumar, también vapear y cigarrillos electrónicos","Prohibidas fiestas y eventos","Prohibidas fotos y grabaciones comerciales"],
+trT:"Cómo llegar",tr1:"<b>Taxi desde el aeropuerto de Fiumicino:</b> tarifa fija de 50 € hasta el centro.",tr2:"<b>Tren:</b> Leonardo Express del aeropuerto a la estación Roma Termini.",tr3:"<b>Desde Termini:</b> metro línea A hasta Barberini y luego autobús 62, 85 o 492 hasta la parada Corso/Minghetti. O autobús 70 hasta Plebiscito o Torre Argentina.",tr4:"<b>El autobús 64</b> (Termini – Torre Argentina – Vaticano) es conocido por los carteristas: vigila tus bolsos.",tr5:"Descarga la app Moovit para ver las rutas en tiempo real: en Roma los autobuses pueden desviarse por visitas oficiales o manifestaciones.",tr6:"La casa está dentro de la ZTL (zona de tráfico limitado): solo pueden entrar coches eléctricos, autorizados o de car sharing (Enjoy, Share Now).",welcome:"Bienvenidos a Roma",qOpen:"Abrir la puerta",qCall:"Contáctanos",nImp:"Ten en cuenta",nArr:"Cómo llegar",nNuki:"Nuki",nHouse:"Guía de la casa",nAround:"Nuestros sitios",nOut:"Salida",nCtc:"Contactos",
+a1t:"Nuki: desliza hacia arriba y pulsa «Abrir puerta»",a1:"No pulses «Desbloquear»: la puerta no se abrirá. Desliza el menú hacia arriba y pulsa el botón amarillo «Abrir puerta».",
+a2t:"El apartamento está en la 1.ª planta",a2:"En Italia la 1.ª planta está encima de la planta baja (planta baja = 0).",
+a3t:"Poca cobertura móvil",a3:"La casa es del siglo XIII y sus muros medievales bloquean la señal en algunas habitaciones. Usa el Wi‑Fi para llamar y escribir.",
+arrT:"De la calle a tu puerta",arr1:"Busca el portal en Via Beato Angelico 20 (foto abajo).",arr2:"Ábrelo con la app Nuki (ver la sección Nuki).",arr3:"Sube a la 1.ª planta: la puerta del apartamento es la verde oscuro. Se abre con Nuki de la misma forma.",
+capB:"Portal, n.º 20",capD:"Puerta del apartamento, 1.ª planta",openMap:"Abrir en Google Maps",
+liftT:"Montacargas para las maletas",lift:"El ascensor es un montacargas, útil para subir las maletas al llegar y bajarlas al salir. Mantén pulsado el botón de la planta durante todo el trayecto: botón 1 para subir (1.ª planta, donde está el apartamento), botón 0 para bajar a la planta baja.",
+nukiT:"Cómo usar Nuki",nk1:"Abre la app Nuki y elige «Lockapartment Beato Angelico».",nk2:"Desliza hacia arriba el menú inferior (la barrita, foto 1).",nk3:"Pulsa el botón amarillo «Abrir puerta» (foto 2). La puerta se desbloquea y se abre. Funciona igual para las dos puertas.",
+capN1:"1 · Desliza el menú hacia arriba",capN2:"2 · Pulsa «Abrir puerta»",nkNote:"No uses «Desbloquear»: solo «Abrir puerta» abre la puerta.",
+net:"Red",copy:"Copiar contraseña",copied:"Copiada",wifiNote:"El Wi‑Fi llega a toda la casa, también donde el móvil no tiene cobertura.",
+acT:"Aire acondicionado y calefacción",ac:"El frío y el calor se regulan con el termostato de la pared del dormitorio. Apaga el aire acondicionado cuando salgas de casa.",
+hwT:"Agua caliente y gas",hw:"El agua caliente sale de una caldera de gas (el contador está fuera de la casa). En la cocina, el mando de acero abre y cierra el gas.",
+sockT:"Enchufes",sock:"Los enchufes tienen una tapa de cristal deslizante: súbela y enchufa con normalidad.",
+wmT:"Lavadora",wm:"En la antesala del baño, en el mueble bajo la ventana. Las instrucciones están en el mueble de al lado.",
+dwT:"Lavavajillas",dw:"En la cocina. Te hemos dejado algunas cápsulas.",
+alexa:"Junto a la televisión del salón. Entiende inglés e italiano.",
+manT:"Manuales de los electrodomésticos",man:"En el cajón del mueble bajo la ventana del dormitorio.",
+aroundIntro:"Nuestros sitios favoritos cerca de casa. «Ruta» abre Google Maps con el camino a pie desde el apartamento.",
+mapNote:"Mapa simplificado: las distancias son aproximadas. Usa «Ruta» para el camino exacto.",
+cats:{sight:"Qué ver",super:"Supermercados",bf:"Desayuno",eat:"Dónde comer",ice:"Helado",drink:"Aperitivo con vistas"},route:"Ruta",gf:"opciones sin gluten",vg:"vegano",
+coIntro:"La salida es antes de las <span class=\"time\">10:00</span>. Antes de irte:",
+co:["Apaga el aire acondicionado","Saca la basura: el punto de recogida está en Piazza del Collegio Romano, junto al instituto","Baja las persianas","Apaga todas las luces","Un pequeño favor: por favor, mete los platos sucios en el lavavajillas y ponlo en marcha","Deja las llaves en el escritorio del salón","Cierra la puerta al salir"],
+coEnd:"¡Esperamos que hayas disfrutado de tu estancia!",call:"Llamar",emT:"Números útiles",em112:"Emergencias (policía, ambulancia, bomberos)",emTaxi:"Taxi Roma",foot:"Gracias y disfruta de Roma · Luciana"},
+de:{nRules:"Hausregeln",rules:["Höchstens 4 Gäste mit Übernachtung","Keine Haustiere","Rauchen verboten, auch Dampfen und E-Zigaretten","Keine Partys oder Veranstaltungen","Keine kommerziellen Foto- oder Filmaufnahmen"],
+trT:"Anreise",tr1:"<b>Taxi vom Flughafen Fiumicino:</b> Festpreis 50 € bis ins Zentrum.",tr2:"<b>Zug:</b> Leonardo Express vom Flughafen bis Roma Termini.",tr3:"<b>Ab Termini:</b> Metro Linie A bis Barberini, dann Bus 62, 85 oder 492 bis zur Haltestelle Corso/Minghetti. Oder Bus 70 bis Plebiscito oder Torre Argentina.",tr4:"<b>Bus 64</b> (Termini – Torre Argentina – Vatikan) ist für Taschendiebe bekannt: Achten Sie auf Ihre Taschen.",tr5:"Laden Sie die App Moovit für Echtzeit-Verbindungen herunter: In Rom werden Busse bei Staatsbesuchen oder Demonstrationen oft umgeleitet.",tr6:"Das Haus liegt in der ZTL (verkehrsberuhigte Zone): Nur Elektro-, genehmigte oder Carsharing-Autos (Enjoy, Share Now) dürfen hineinfahren.",welcome:"Willkommen in Rom",qOpen:"Tür öffnen",qCall:"Kontakt",nImp:"Gut zu wissen",nArr:"Anreise",nNuki:"Nuki",nHouse:"Hausanleitung",nAround:"Unsere Lieblingsorte",nOut:"Check-out",nCtc:"Kontakt",
+a1t:"Nuki: nach oben wischen, dann „Tür öffnen“",a1:"Tippen Sie nicht auf „Aufsperren“: Dann öffnet sich die Tür nicht. Wischen Sie das Menü nach oben und tippen Sie auf den gelben Knopf „Tür öffnen“.",
+a2t:"Die Wohnung liegt im 1. Stock",a2:"In Italien ist der 1. Stock über dem Erdgeschoss (Erdgeschoss = 0).",
+a3t:"Schwacher Handyempfang",a3:"Das Haus stammt aus dem 13. Jahrhundert und die mittelalterlichen Mauern blockieren in manchen Räumen den Empfang. Nutzen Sie das WLAN zum Telefonieren und Schreiben.",
+arrT:"Von der Straße bis zur Wohnungstür",arr1:"Die Haustür ist in der Via Beato Angelico 20 (Foto unten).",arr2:"Öffnen Sie sie mit der Nuki-App (siehe Abschnitt Nuki).",arr3:"Gehen Sie in den 1. Stock: Die Wohnungstür ist dunkelgrün. Sie öffnet sich genauso mit Nuki.",
+capB:"Haustür, Nr. 20",capD:"Wohnungstür, 1. Stock",openMap:"In Google Maps öffnen",
+liftT:"Lastenaufzug für das Gepäck",lift:"Der Aufzug ist ein Lastenaufzug, praktisch, um die Koffer bei der Ankunft nach oben und bei der Abreise nach unten zu bringen. Halten Sie die Etagentaste während der ganzen Fahrt gedrückt: Taste 1 nach oben (1. Stock, dort ist die Wohnung), Taste 0 nach unten ins Erdgeschoss.",
+nukiT:"So funktioniert Nuki",nk1:"Öffnen Sie die Nuki-App und wählen Sie „Lockapartment Beato Angelico“.",nk2:"Ziehen Sie das untere Menü nach oben (am kleinen Balken, Foto 1).",nk3:"Tippen Sie auf den gelben Knopf „Tür öffnen“ (Foto 2). Die Tür wird entriegelt und öffnet sich. Das gilt für beide Türen.",
+capN1:"1 · Menü nach oben wischen",capN2:"2 · „Tür öffnen“ tippen",nkNote:"Nicht „Aufsperren“ benutzen: Nur „Tür öffnen“ öffnet die Tür.",
+net:"Netzwerk",copy:"Passwort kopieren",copied:"Kopiert",wifiNote:"Das WLAN reicht durch das ganze Haus, auch dort, wo das Handy keinen Empfang hat.",
+acT:"Klimaanlage und Heizung",ac:"Kühlen und Heizen regeln Sie am Thermostat an der Schlafzimmerwand. Bitte schalten Sie die Klimaanlage aus, wenn Sie das Haus verlassen.",
+hwT:"Warmwasser und Gas",hw:"Das Warmwasser kommt aus einem Gasboiler (der Zähler ist außerhalb der Wohnung). In der Küche öffnet und schließt der Stahlknauf das Gas.",
+sockT:"Steckdosen",sock:"Die Steckdosen haben eine Glasabdeckung zum Schieben: nach oben schieben und normal einstecken.",
+wmT:"Waschmaschine",wm:"Im Vorraum des Bads, im Schrank unter dem Fenster. Die Anleitung liegt im Schrank daneben.",
+dwT:"Geschirrspüler",dw:"In der Küche. Wir haben Ihnen ein paar Tabs dagelassen.",
+alexa:"Neben dem Fernseher im Wohnzimmer. Sie versteht Englisch und Italienisch.",
+manT:"Bedienungsanleitungen",man:"In der Schublade des Schranks unter dem Schlafzimmerfenster.",
+aroundIntro:"Unsere Lieblingsorte in der Nähe. „Route“ öffnet Google Maps mit dem Fußweg ab der Wohnung.",
+mapNote:"Vereinfachte Karte: Entfernungen sind ungefähr. Nutzen Sie „Route“ für den genauen Weg.",
+cats:{sight:"Sehenswürdigkeiten",super:"Supermärkte",bf:"Frühstück",eat:"Essen gehen",ice:"Eis",drink:"Aperitivo mit Aussicht"},route:"Route",gf:"glutenfreie Optionen",vg:"vegan",
+coIntro:"Check-out bis <span class=\"time\">10:00 Uhr</span>. Bevor Sie gehen:",
+co:["Klimaanlage ausschalten","Müll hinausbringen: Die Sammelstelle ist auf der Piazza del Collegio Romano, neben dem Gymnasium","Rollläden schließen","Alle Lichter ausschalten","Eine kleine Bitte: Stellen Sie das schmutzige Geschirr in den Geschirrspüler und schalten Sie ihn ein","Die Schlüssel auf dem Schreibtisch im Wohnzimmer lassen","Die Tür hinter sich zuziehen"],
+coEnd:"Wir hoffen, Sie hatten einen schönen Aufenthalt!",call:"Anrufen",emT:"Nützliche Nummern",em112:"Notruf (Polizei, Rettung, Feuerwehr)",emTaxi:"Taxi Roma",foot:"Grazie und viel Spaß in Rom · Luciana"}
+};
+const HOME="Via Beato Angelico 20, 00186 Roma";
+// Ogni posto: [nome mostrato, categoria, cosa cercare su Google Maps, latitudine, longitudine, senza glutine (1 sì, 0 no), descrizione (solo Roma unica)]
+// Categorie: sight=da vedere, uniq=Roma unica, bf=colazione, eat=mangiare, ice=gelato, super=supermercati, drink=aperitivo
+// Le coordinate vengono da OpenStreetMap. Senza coordinate il posto resta nella lista ma non compare sulla mappa.
+const P=[
+["Pantheon","sight","Pantheon, Piazza della Rotonda, Roma",41.89863,12.47683],
+["Santa Maria sopra Minerva","sight","Basilica di Santa Maria sopra Minerva, Roma",41.89799,12.47837],
+["Sant'Ignazio di Loyola","sight","Chiesa di Sant'Ignazio di Loyola, Roma",41.8988,12.47978],
+["Galleria Doria Pamphilj","sight","Galleria Doria Pamphilj, Via del Corso 305, Roma",41.89782,12.48156],
+["Fontana di Trevi","sight","Fontana di Trevi, Roma",41.90096,12.48328],
+["Piazza Navona","sight","Piazza Navona, Roma",41.89893,12.4731],
+["Altare della Patria","sight","Altare della Patria, Roma",41.8947,12.48318],
+["Campo de' Fiori","sight","Campo de' Fiori, Roma",41.89549,12.47236],
+["Castel Sant'Angelo","sight","Castel Sant'Angelo, Roma",41.90312,12.46634],
+["Basilica di San Pietro","sight","Basilica di San Pietro, Città del Vaticano",41.90216,12.45371],
+["Musei Vaticani","sight","Musei Vaticani, Viale Vaticano, Roma",41.90691,12.45293],
+["Galleria Sciarra","uniq","Galleria Sciarra, Roma",41.89981,12.48204,0,"u1"],
+["Largo di Torre Argentina","uniq","Largo di Torre Argentina, Roma",41.89532,12.47688,0,"u3"],
+["Chiostro del Bramante","uniq","Chiostro del Bramante, Arco della Pace 5, Roma",41.90002,12.4715,0,"u2"],
+["Terrazza del Pincio","uniq","Terrazza del Pincio, Piazzale Napoleone I, Roma",41.91142,12.47853,0,"u4"],
+["Gianicolo","uniq","Piazzale Giuseppe Garibaldi, Roma",41.8916,12.46095,0,"u5"],
+["Giardino degli Aranci","uniq","Giardino degli Aranci, Roma",41.88493,12.48045,0,"u6"],
+["Buco della serratura","uniq","Piazza dei Cavalieri di Malta, Roma",41.88285,12.47855,0,"u7"],
+["Mercato Trionfale","uniq","Mercato Trionfale, Via Andrea Doria 41, Roma",41.90932,12.45273,0,"u8"],
+["Carrefour Express","super","Carrefour Express, Via del Gesù 57, Roma",41.89633,12.47871],
+["Caffè Gotico","bf","Caffè Gotico, Via della Stelletta 7a, Roma",41.90167,12.47556],
+["Casa Maddalena","bf","Casa Maddalena, Via della Maddalena 36, Roma",41.90077,12.47661],
+["Pasticceria La Deliziosa","bf","Pasticceria La Deliziosa, Vicolo Savelli 48, Roma",41.89796,12.47073],
+["Celiachiamo LAB Prati","bf","Celiachiamo LAB Prati, Via Trionfale 15, Roma",41.91075,12.45409,1],
+["Le Altre Farine del Mulino","bf","Le Altre Farine Del Mulino, Via di Porta Cavalleggeri 151, Roma",41.89903,12.45227,1],
+["Ginger","eat","Ginger Sapori e Salute, Piazza di Sant'Eustachio 54, Roma",41.89835,12.47578],
+["Osteria da Fortunata","eat","Osteria da Fortunata, Via del Pellegrino 11, Roma",41.89611,12.4717],
+["Trapizzino","eat","Trapizzino, Piazza Trilussa 46, Roma",41.89146,12.46991],
+["Ditirambo","eat","Ditirambo, Piazza della Cancelleria 74, Roma",41.89639,12.47237],
+["Pandalì","eat","Pandalì, Via di Torre Argentina 3, Roma",41.89714,12.47645,1],
+["Gluten Free San Pietro","eat","Gluten Free San Pietro, Via Bonifacio VIII 21, Roma",41.89902,12.45309,1],
+["Buddy Veggy","eat","Buddy Veggy Restaurant Cafè, Corso Vittorio Emanuele II 107A, Roma",41.89663,12.47471,2],
+["Écru","eat","Écru, Via Acciaioli 13, Roma",41.89993,12.46460,2],
+["Flower Burger","eat","Flower Burger, Via dei Gracchi 87, Roma",41.90784,12.46216,2],
+["Eroi della Pizza","eat","Eroi Della Pizza, Piazzale degli Eroi 6, Roma",41.90889,12.4503],
+["Trattoria da Alfredo e Ada","eat","Trattoria da Alfredo e Ada, Via dei Banchi Nuovi 14, Roma",41.89961,12.46729],
+["Alfredo alla Scrofa","eat","Alfredo alla Scrofa, Via della Scrofa 104, Roma",41.90227,12.47481],
+["Sora Lella","eat","Trattoria Sora Lella, Via di Ponte Quattro Capi 16, Roma",41.8907,12.47813],
+["Taverna 51","eat","Taverna 51, Via della Lungaretta 85, Roma",41.88962,12.47155],
+["Tonnarello","eat","Tonnarello, Via della Paglia 1, Roma",41.88980,12.46930],
+["Nannarella","eat","Nannarella, Piazza di San Calisto 7a, Roma",41.88892,12.47073],
+["Osteria Martino","eat","Osteria Martino, Via del Moro 61, Roma",41.89120,12.47024],
+["La Forchetta Romana","eat","La forchetta romana, Via Garibaldi 63, Roma",41.89121,12.46676],
+["Osteria Sant'Uffizio","eat","Osteria Sant'Uffizio Vaticano, Roma",41.89985,12.45657],
+["Pastasciutta","eat","Pastasciutta, Via delle Grazie 5, Roma",41.90466,12.45808],
+["200 Gradi","eat","200 Gradi, Piazza del Risorgimento 3, Roma",41.90645,12.45654],
+["Venchi","ice","Venchi, Via del Corso 335, Roma",41.90009,12.4807],
+["La Romana","ice","Gelateria La Romana, Piazza di Sant'Andrea della Valle 1, Roma",41.8968,12.47427],
+["Cremilla","ice","Cremilla, Via di Porta Castello 39, Roma",41.90427,12.46334],
+["Neve di Latte","ice","Neve di Latte, Via dei Banchi Vecchi 140, Roma",41.89754,12.46779],
+["Giolitti","ice","Giolitti, Via degli Uffici del Vicario 40, Roma",41.90106,12.47725],
+["Otaleg","ice","Otaleg, Via di San Cosimato 14a, Roma",41.88817,12.47046],
+["Oro Bistrot (NH Hotel)","drink","Oro Bistrot, Roma",41.89618,12.48484],
+["Terrazza Borromini","drink","Terrazza Borromini, Via di Santa Maria dell'Anima 30, Roma",41.89914,12.4724],
+["Terrazza Les Étoiles","drink","Terrazza Les Étoiles, Via dei Bastioni 1, Roma",41.90435,12.46215]
+];
+// Testi aggiunti per lo stile "taccuino" (una riga per lingua)
+Object.assign(T.en,{sub:"Welcome to our home in the heart of Rome",capHome:"our living room",capView:"the view from the window",heroNote:"Pantheon is 2 minutes away on foot!",gLiving:"living room",gKitchen:"kitchen",gBed:"bedroom",gBath:"travertine bathroom",gStreet:"our street",signNote:"Write to us for anything, we usually reply within minutes."});
+Object.assign(T.it,{sub:"Benvenuti a casa nostra, nel cuore di Roma",capHome:"il nostro soggiorno",capView:"la vista dalla finestra",heroNote:"Il Pantheon è a 2 minuti a piedi!",gLiving:"soggiorno",gKitchen:"cucina",gBed:"camera da letto",gBath:"bagno in travertino",gStreet:"la nostra via",signNote:"Scriveteci per qualsiasi cosa, di solito rispondiamo in pochi minuti."});
+Object.assign(T.fr,{sub:"Bienvenue chez nous, au cœur de Rome",capHome:"notre salon",capView:"la vue depuis la fenêtre",heroNote:"Le Panthéon est à 2 minutes à pied !",gLiving:"salon",gKitchen:"cuisine",gBed:"chambre",gBath:"salle de bain en travertin",gStreet:"notre rue",signNote:"Écrivez-nous pour tout, nous répondons en général en quelques minutes."});
+Object.assign(T.es,{sub:"Bienvenidos a nuestra casa, en el corazón de Roma",capHome:"nuestro salón",capView:"la vista desde la ventana",heroNote:"¡El Panteón está a 2 minutos a pie!",gLiving:"salón",gKitchen:"cocina",gBed:"dormitorio",gBath:"baño de travertino",gStreet:"nuestra calle",signNote:"Escríbenos para lo que sea, solemos responder en pocos minutos."});
+Object.assign(T.de,{sub:"Willkommen bei uns, im Herzen Roms",capHome:"unser Wohnzimmer",capView:"der Blick aus dem Fenster",heroNote:"Das Pantheon ist 2 Gehminuten entfernt!",gLiving:"Wohnzimmer",gKitchen:"Küche",gBed:"Schlafzimmer",gBath:"Bad aus Travertin",gStreet:"unsere Straße",signNote:"Schreiben Sie uns jederzeit, wir antworten meist in wenigen Minuten."});
+Object.assign(T.en,{ctcAir:"For anything at all, write to us in the <b>Airbnb app</b> (Messages tab): you'll also find Luciana's phone number there."});
+Object.assign(T.it,{ctcAir:"Per qualsiasi cosa scriveteci dall'<b>app Airbnb</b> (sezione Messaggi): lì trovate anche il numero di Luciana."});
+Object.assign(T.fr,{ctcAir:"Pour toute question, écrivez-nous dans l'<b>application Airbnb</b> (onglet Messages) : vous y trouverez aussi le numéro de Luciana."});
+Object.assign(T.es,{ctcAir:"Para cualquier cosa, escríbenos desde la <b>app de Airbnb</b> (pestaña Mensajes): allí también tienes el número de Luciana."});
+Object.assign(T.de,{ctcAir:"Schreiben Sie uns bei allen Fragen in der <b>Airbnb-App</b> (Bereich Nachrichten) – dort finden Sie auch Luciana's Telefonnummer."});
+
+Object.assign(T.en,{mAll:"All",mNear:"Near home",mWide:"Whole area",home:"Home",mapNote:"Tap a number to see the place and the walking route. Map data © OpenStreetMap contributors."});
+Object.assign(T.it,{mAll:"Tutti",mNear:"Vicino a casa",mWide:"Tutta la zona",home:"Casa",mapNote:"Tocca un numero per vedere il posto e il percorso a piedi. Dati della mappa © contributori di OpenStreetMap."});
+Object.assign(T.fr,{mAll:"Tous",mNear:"Près de la maison",mWide:"Tout le quartier",home:"Maison",mapNote:"Touchez un numéro pour voir le lieu et l’itinéraire à pied. Données © contributeurs OpenStreetMap."});
+Object.assign(T.es,{mAll:"Todos",mNear:"Cerca de casa",mWide:"Toda la zona",home:"Casa",mapNote:"Toca un número para ver el sitio y la ruta a pie. Datos del mapa © colaboradores de OpenStreetMap."});
+Object.assign(T.de,{mAll:"Alle",mNear:"Nahe der Wohnung",mWide:"Ganze Gegend",home:"Wohnung",mapNote:"Tippen Sie auf eine Nummer, um den Ort und den Fußweg zu sehen. Kartendaten © OpenStreetMap-Mitwirkende."});
+
+Object.assign(T.en,{"allSec": "All sections", "nUniq": "Unique Rome", "hImp": "The 4 things to know", "hArr": "Transport, doors, lift", "hNuki": "Open the doors with the app", "hWifi": "Network and password", "hHouse": "AC, boiler, appliances", "hRules": "Please respect them", "hAround": "Map, food, gelato", "hUniq": "Hidden corners and views", "hOut": "Before you leave", "hCtc": "Write to Luciana", "uniqIntro": "Places most visitors walk past: hidden courtyards, secret views and the best sunsets in Rome. Some are 5 minutes from home, others make a lovely walk.", "onMap": "On the map", "mVat": "Vatican", "u1": "A hidden Art Nouveau courtyard covered in frescoes of women, just behind Via del Corso. Free, 5 minutes from home.", "u2": "Bramante's Renaissance cloister. Upstairs, the café has a window looking straight onto Raphael's Sibyls in Santa Maria della Pace.", "u3": "The ruins where Julius Caesar was killed, today home to a cat sanctuary. You can see it from the street.", "u4": "Terrace above Piazza del Popolo: at sunset you see the whole city as far as St Peter's dome.", "u5": "The most beautiful panorama of Rome. Every day at noon a cannon shot is fired from below the terrace.", "u6": "The orange garden on the Aventine hill, with a wide view over the Tiber and St Peter's.", "u7": "Look through the keyhole of the Knights of Malta's door: St Peter's dome appears perfectly framed. There may be a short queue.", "u8": "One of Rome's largest covered markets, where Romans really shop: fruit, vegetables, cheese, cured meats and spices. A few minutes from the Vatican Museums. Open in the morning, closed on Sundays."});T.en.cats.uniq="Unique Rome";
+Object.assign(T.it,{"allSec": "Tutte le sezioni", "nUniq": "Roma unica", "hImp": "Le 4 cose da sapere", "hArr": "Trasporti, portoni, ascensore", "hNuki": "Aprire le porte con l'app", "hWifi": "Rete e password", "hHouse": "Clima, caldaia, elettrodomestici", "hRules": "Per favore rispettale", "hAround": "Mappa, ristoranti, gelato", "hUniq": "Angoli nascosti e panorami", "hOut": "Prima di partire", "hCtc": "Scrivi a Luciana", "uniqIntro": "Posti davanti ai quali quasi tutti passano senza accorgersene: cortili nascosti, viste segrete e i tramonti più belli di Roma. Alcuni sono a 5 minuti da casa, altri valgono una bella passeggiata.", "onMap": "Sulla mappa", "mVat": "Vaticano", "u1": "Un cortile Liberty nascosto, tutto affrescato con figure femminili, proprio dietro Via del Corso. Gratis, a 5 minuti da casa.", "u2": "Il chiostro rinascimentale di Bramante. Al piano di sopra la caffetteria ha una finestra che guarda dritto sulle Sibille di Raffaello in Santa Maria della Pace.", "u3": "Le rovine dove fu ucciso Giulio Cesare, oggi rifugio di una colonia di gatti. Si vede dalla strada.", "u4": "La terrazza sopra Piazza del Popolo: al tramonto si vede tutta la città fino alla cupola di San Pietro.", "u5": "Il panorama più bello di Roma. Ogni giorno a mezzogiorno sotto la terrazza si spara un colpo di cannone.", "u6": "Il giardino degli aranci sull'Aventino, con una vista larghissima sul Tevere e su San Pietro.", "u7": "Guarda dal buco della serratura del portone dei Cavalieri di Malta: la cupola di San Pietro appare incorniciata alla perfezione. A volte c'è un po' di fila.", "u8": "Uno dei mercati coperti più grandi di Roma, dove fanno la spesa i romani: frutta, verdura, formaggi, salumi e spezie. A pochi minuti dai Musei Vaticani. Aperto la mattina, chiuso la domenica."});T.it.cats.uniq="Roma unica";
+Object.assign(T.fr,{"allSec": "Toutes les sections", "nUniq": "Rome insolite", "hImp": "Les 4 choses à savoir", "hArr": "Transports, portes, ascenseur", "hNuki": "Ouvrir les portes avec l'appli", "hWifi": "Réseau et mot de passe", "hHouse": "Clim, chaudière, appareils", "hRules": "Merci de les respecter", "hAround": "Carte, restos, glaces", "hUniq": "Coins cachés et panoramas", "hOut": "Avant de partir", "hCtc": "Écrire à Luciana", "uniqIntro": "Des lieux devant lesquels presque tout le monde passe sans les voir : cours cachées, vues secrètes et les plus beaux couchers de soleil de Rome. Certains sont à 5 minutes de la maison, d'autres valent une belle promenade.", "onMap": "Sur la carte", "mVat": "Vatican", "u1": "Une cour Art nouveau cachée, couverte de fresques de femmes, juste derrière la Via del Corso. Gratuit, à 5 minutes de la maison.", "u2": "Le cloître Renaissance de Bramante. À l'étage, le café a une fenêtre qui donne directement sur les Sibylles de Raphaël à Santa Maria della Pace.", "u3": "Les ruines où Jules César a été assassiné, aujourd'hui refuge d'une colonie de chats. On le voit depuis la rue.", "u4": "La terrasse au-dessus de la Piazza del Popolo : au coucher du soleil, on voit toute la ville jusqu'à la coupole de Saint-Pierre.", "u5": "Le plus beau panorama de Rome. Chaque jour à midi, un coup de canon est tiré sous la terrasse.", "u6": "Le jardin des orangers sur l'Aventin, avec une vue immense sur le Tibre et Saint-Pierre.", "u7": "Regardez par le trou de la serrure de la porte des Chevaliers de Malte : la coupole de Saint-Pierre apparaît parfaitement encadrée. Il y a parfois un peu d'attente.", "u8": "L'un des plus grands marchés couverts de Rome, où les Romains font vraiment leurs courses : fruits, légumes, fromages, charcuterie et épices. À quelques minutes des Musées du Vatican. Ouvert le matin, fermé le dimanche."});T.fr.cats.uniq="Rome insolite";
+Object.assign(T.es,{"allSec": "Todas las secciones", "nUniq": "Roma única", "hImp": "Las 4 cosas que debes saber", "hArr": "Transporte, puertas, ascensor", "hNuki": "Abrir las puertas con la app", "hWifi": "Red y contraseña", "hHouse": "Clima, caldera, aparatos", "hRules": "Por favor, respétalas", "hAround": "Mapa, comida, helado", "hUniq": "Rincones ocultos y vistas", "hOut": "Antes de irte", "hCtc": "Escribe a Luciana", "uniqIntro": "Lugares por delante de los que casi todos pasan sin darse cuenta: patios escondidos, vistas secretas y los atardeceres más bonitos de Roma. Algunos están a 5 minutos de casa, otros merecen un buen paseo.", "onMap": "En el mapa", "mVat": "Vaticano", "u1": "Un patio modernista escondido, cubierto de frescos de mujeres, justo detrás de Via del Corso. Gratis, a 5 minutos de casa.", "u2": "El claustro renacentista de Bramante. Arriba, la cafetería tiene una ventana que da directamente a las Sibilas de Rafael en Santa Maria della Pace.", "u3": "Las ruinas donde fue asesinado Julio César, hoy refugio de una colonia de gatos. Se ve desde la calle.", "u4": "La terraza sobre la Piazza del Popolo: al atardecer se ve toda la ciudad hasta la cúpula de San Pedro.", "u5": "El panorama más bonito de Roma. Cada día a mediodía se dispara un cañonazo bajo la terraza.", "u6": "El jardín de los naranjos en el Aventino, con una vista amplísima sobre el Tíber y San Pedro.", "u7": "Mira por el ojo de la cerradura del portón de los Caballeros de Malta: la cúpula de San Pedro aparece perfectamente enmarcada. A veces hay un poco de cola.", "u8": "Uno de los mercados cubiertos más grandes de Roma, donde compran los romanos: fruta, verdura, quesos, embutidos y especias. A pocos minutos de los Museos Vaticanos. Abierto por la mañana, cerrado los domingos."});T.es.cats.uniq="Roma única";
+Object.assign(T.de,{"allSec": "Alle Abschnitte", "nUniq": "Einzigartiges Rom", "hImp": "Die 4 wichtigsten Dinge", "hArr": "Anreise, Türen, Aufzug", "hNuki": "Türen mit der App öffnen", "hWifi": "Netzwerk und Passwort", "hHouse": "Klima, Boiler, Geräte", "hRules": "Bitte beachten", "hAround": "Karte, Essen, Eis", "hUniq": "Verborgene Ecken und Ausblicke", "hOut": "Vor der Abreise", "hCtc": "Schreiben Sie Luciana", "uniqIntro": "Orte, an denen fast alle vorbeigehen, ohne sie zu bemerken: versteckte Innenhöfe, geheime Ausblicke und die schönsten Sonnenuntergänge Roms. Manche sind 5 Minuten entfernt, andere lohnen einen schönen Spaziergang.", "onMap": "Auf der Karte", "mVat": "Vatikan", "u1": "Ein versteckter Jugendstil-Innenhof voller Fresken mit Frauenfiguren, direkt hinter der Via del Corso. Kostenlos, 5 Minuten von der Wohnung.", "u2": "Bramantes Renaissance-Kreuzgang. Oben hat das Café ein Fenster mit direktem Blick auf Raffaels Sibyllen in Santa Maria della Pace.", "u3": "Die Ruinen, in denen Julius Caesar ermordet wurde, heute Zuhause einer Katzenkolonie. Man sieht sie von der Straße aus.", "u4": "Die Terrasse über der Piazza del Popolo: Bei Sonnenuntergang sieht man die ganze Stadt bis zur Kuppel des Petersdoms.", "u5": "Das schönste Panorama Roms. Jeden Tag um zwölf Uhr wird unterhalb der Terrasse ein Kanonenschuss abgefeuert.", "u6": "Der Orangengarten auf dem Aventin mit weitem Blick über den Tiber und den Petersdom.", "u7": "Schauen Sie durch das Schlüsselloch des Tors der Malteserritter: Die Kuppel des Petersdoms erscheint perfekt eingerahmt. Manchmal gibt es eine kleine Schlange.", "u8": "Eine der größten Markthallen Roms, wo die Römer wirklich einkaufen: Obst, Gemüse, Käse, Wurst und Gewürze. Wenige Minuten von den Vatikanischen Museen. Vormittags geöffnet, sonntags geschlossen."});T.de.cats.uniq="Einzigartiges Rom";
+
+Object.assign(T.en,{prev:"Previous",next:"Next"});Object.assign(T.it,{prev:"Precedente",next:"Successiva"});Object.assign(T.fr,{prev:"Précédente",next:"Suivante"});Object.assign(T.es,{prev:"Anterior",next:"Siguiente"});Object.assign(T.de,{prev:"Zurück",next:"Weiter"});
+Object.assign(T.en,{"nk1": "Open the Nuki app and choose the door: “Main door Beato Angelico” is the building door on the street, “House door Beato Angelico” is the apartment door on the 1st floor.", "nk3": "Tap the yellow “Open door” button (photo 2). The door unlocks and opens. It works exactly the same way for both doors.", "arr2": "Open it with the Nuki app: choose “Main door Beato Angelico” (see the Nuki section).", "arr3": "Go up to the 1st floor: the apartment door is the dark green one. Open it the same way, choosing “House door Beato Angelico”.", "nkPh": "The photos only show how the app works: the name of the door at the top will be the one you chose."});
+Object.assign(T.it,{"nk1": "Apri l’app Nuki e scegli la porta: «Main door Beato Angelico» è il portone sulla strada, «House door Beato Angelico» è la porta dell’appartamento al 1° piano.", "nk3": "Tocca il tasto giallo “Aprire porta” (foto 2). La porta si sblocca e si apre. Funziona esattamente allo stesso modo per il portone e per la porta di casa.", "arr2": "Aprilo con l’app Nuki scegliendo «Main door Beato Angelico» (vedi la sezione Nuki).", "arr3": "Sali al 1° piano: la porta di casa è quella verde scuro. Si apre allo stesso modo, scegliendo «House door Beato Angelico».", "nkPh": "Le foto mostrano solo come funziona l’app: in alto vedrai il nome della porta che hai scelto."});
+Object.assign(T.fr,{"nk1": "Ouvrez l’application Nuki et choisissez la porte : « Main door Beato Angelico » est la porte de l’immeuble sur la rue, « House door Beato Angelico » est la porte de l’appartement au 1er étage.", "nk3": "Appuyez sur le bouton jaune « Ouvrir la porte » (photo 2). La porte se déverrouille et s’ouvre. Cela fonctionne exactement de la même façon pour les deux portes.", "arr2": "Ouvrez-la avec l’application Nuki en choisissant « Main door Beato Angelico » (voir la section Nuki).", "arr3": "Montez au 1er étage : la porte de l’appartement est vert foncé. Elle s’ouvre de la même façon, en choisissant « House door Beato Angelico ».", "nkPh": "Les photos montrent seulement le fonctionnement de l’application : en haut, vous verrez le nom de la porte choisie."});
+Object.assign(T.es,{"nk1": "Abre la app Nuki y elige la puerta: «Main door Beato Angelico» es el portal de la calle, «House door Beato Angelico» es la puerta del apartamento en la 1.ª planta.", "nk3": "Pulsa el botón amarillo «Abrir puerta» (foto 2). La puerta se desbloquea y se abre. Funciona exactamente igual para el portal y para la puerta de casa.", "arr2": "Ábrelo con la app Nuki eligiendo «Main door Beato Angelico» (ver la sección Nuki).", "arr3": "Sube a la 1.ª planta: la puerta del apartamento es la verde oscuro. Se abre de la misma forma, eligiendo «House door Beato Angelico».", "nkPh": "Las fotos solo muestran cómo funciona la app: arriba verás el nombre de la puerta que hayas elegido."});
+Object.assign(T.de,{"nk1": "Öffnen Sie die Nuki-App und wählen Sie die Tür: „Main door Beato Angelico“ ist die Haustür an der Straße, „House door Beato Angelico“ die Wohnungstür im 1. Stock.", "nk3": "Tippen Sie auf den gelben Knopf „Tür öffnen“ (Foto 2). Die Tür wird entriegelt und öffnet sich. Das funktioniert bei beiden Türen genau gleich.", "arr2": "Öffnen Sie sie mit der Nuki-App, indem Sie „Main door Beato Angelico“ wählen (siehe Abschnitt Nuki).", "arr3": "Gehen Sie in den 1. Stock: Die Wohnungstür ist dunkelgrün. Sie öffnet sich genauso, wenn Sie „House door Beato Angelico“ wählen.", "nkPh": "Die Fotos zeigen nur, wie die App funktioniert: Oben steht der Name der Tür, die Sie gewählt haben."});
+
+Object.assign(T.en,{keysT:"Physical keys too",keys:"You will find a set of physical keys on the desk in the living room. Please always take them with you when you go out, in addition to the Nuki app: if your phone runs out of battery or loses connection, you can still get in."});
+Object.assign(T.it,{keysT:"Anche le chiavi",keys:"Troverete un mazzo di chiavi fisiche sulla scrivania nel salone. Portatele sempre con voi quando uscite, oltre al Nuki: se il telefono si scarica o non ha connessione, potete entrare lo stesso."});
+Object.assign(T.fr,{keysT:"Les clés aussi",keys:"Vous trouverez un jeu de clés physiques sur le bureau du salon. Emportez-les toujours avec vous quand vous sortez, en plus de l'application Nuki : si votre téléphone n'a plus de batterie ou de connexion, vous pourrez quand même entrer."});
+Object.assign(T.es,{keysT:"También las llaves",keys:"Encontraréis un juego de llaves físicas en el escritorio del salón. Llevadlas siempre con vosotros cuando salgáis, además de la app Nuki: si el móvil se queda sin batería o sin conexión, podréis entrar igualmente."});
+Object.assign(T.de,{keysT:"Auch die Schlüssel",keys:"Einen Satz physischer Schlüssel finden Sie auf dem Schreibtisch im Wohnzimmer. Nehmen Sie ihn beim Hinausgehen bitte immer mit, zusätzlich zur Nuki-App: Wenn der Akku leer ist oder keine Verbindung besteht, kommen Sie trotzdem hinein."});
+Object.assign(T.en,{chatB:"Message us on Airbnb",chatS:"For anything at all, we're just a message away."});
+Object.assign(T.it,{chatB:"Scrivici su Airbnb",chatS:"Per qualsiasi cosa, siamo a un messaggio di distanza."});
+Object.assign(T.fr,{chatB:"Écrivez-nous sur Airbnb",chatS:"Pour quoi que ce soit, nous sommes à un message de vous."});
+Object.assign(T.es,{chatB:"Escríbenos por Airbnb",chatS:"Para lo que sea, estamos a un mensaje de distancia."});
+Object.assign(T.de,{chatB:"Schreiben Sie uns auf Airbnb",chatS:"Was auch immer Sie brauchen: Wir sind nur eine Nachricht entfernt."});
+T.it.op={"Pantheon": "Entrate e guardate in su: l'occhio della cupola è aperto sul cielo da quasi 2000 anni.", "Santa Maria sopra Minerva": "Da fuori sembra semplice, dentro c'è un cielo blu stellato: l'unica chiesa gotica di Roma.", "Sant'Ignazio di Loyola": "Mettetevi sul disco nel pavimento e guardate la finta cupola: un'illusione che lascia a bocca aperta.", "Galleria Doria Pamphilj": "Un palazzo ancora abitato dalla famiglia, con Caravaggio e Velázquez quasi solo per voi.", "Fontana di Trevi": "Andateci presto la mattina o tardi la sera: senza folla è un'altra cosa. E lanciate la monetina!", "Piazza Navona": "La piazza più bella per una passeggiata, soprattutto al tramonto con gli artisti di strada.", "Altare della Patria": "Salite in ascensore fino in cima: la vista su tutta Roma vale il biglietto.", "Campo de' Fiori": "La mattina c'è il mercato, la sera diventa la piazza più vivace del centro.", "Castel Sant'Angelo": "Arrivateci dal Ponte degli Angeli e salite sulla terrazza: San Pietro sembra a un passo.", "Basilica di San Pietro": "Salite sulla cupola, anche a piedi: la vista sulla piazza e su Roma è indimenticabile.", "Musei Vaticani": "Prenotate online e andate di prima mattina: la Cappella Sistina vi resterà nel cuore.", "Carrefour Express": "Il più comodo per la spesa veloce, a due passi da casa.", "Caffè Gotico": "Un bar piccolo e accogliente dietro il Pantheon, perfetto per cornetto e cappuccino.", "Casa Maddalena": "Per una colazione con calma a due passi dal Pantheon.", "Pasticceria La Deliziosa": "Dolci fatti come una volta: provate i maritozzi con la panna.", "Celiachiamo LAB Prati": "Forno tutto senza glutine: cornetti e dolci che non sembrano senza glutine.", "Le Altre Farine del Mulino": "Senza glutine a due passi da San Pietro, buono per colazione e non solo.", "Ginger": "Quando avete voglia di qualcosa di fresco e leggero: insalate, centrifughe e bowl.", "Osteria da Fortunata": "Guardate le signore che tirano la pasta a mano in vetrina, poi assaggiatela.", "Trapizzino": "Lo street food romano più furbo: pizza bianca ripiena di sugo alla romana.", "Ditirambo": "Cucina romana fatta con cura, in una saletta intima vicino a Campo de' Fiori.", "Pandalì": "Tutto senza glutine, ma lo amano anche i non celiaci.", "Gluten Free San Pietro": "Carbonara, lasagne e tiramisù tutti senza glutine: non sentirete la differenza.", "Buddy Veggy": "Vegano e goloso, comodo in pieno centro.", "Écru": "Piccolo e curato, con piatti vegani crudi e biologici.", "Flower Burger": "Hamburger vegani coloratissimi, divertenti anche per chi vegano non è.", "Eroi della Pizza": "Pizza buonissima dopo una giornata ai Musei Vaticani, e provate anche i supplì!", "Trattoria da Alfredo e Ada": "Piccola trattoria di una volta, si mangia quello che c'è quel giorno.", "Alfredo alla Scrofa": "Qui sono nate le fettuccine Alfredo: provatele dove tutto è cominciato.", "Sora Lella": "Sull'Isola Tiberina, la cucina romana di una famiglia storica.", "Taverna 51": "Atmosfera da vera osteria di Trastevere, porzioni generose.", "Tonnarello": "La cacio e pepe servita nella padella: c'è spesso fila, ma scorre veloce.", "Nannarella": "Trattoria allegra in una piazzetta di Trastevere, cucina romana senza fronzoli.", "Osteria Martino": "Piccola osteria nei vicoli di Trastevere, accoglienza calorosa.", "La Forchetta Romana": "Ai piedi del Gianicolo: perfetta per cena dopo il tramonto lassù.", "Osteria Sant'Uffizio": "Una vera osteria romana a due passi da San Pietro, dove i turisti di solito non arrivano.", "Pastasciutta": "Pasta fresca veloce e buonissima: perfetta per pranzo vicino al Vaticano.", "200 Gradi": "Panini enormi e farciti bene, ideali prima o dopo i Musei.", "Venchi": "Per gli amanti del cioccolato: il gelato al fondente è da provare.", "La Romana": "Gelato cremoso e un rubinetto di cioccolato fuso nel cono: irresistibile.", "Cremilla": "Gelato artigianale buonissimo sulla strada tra Castel Sant'Angelo e San Pietro.", "Neve di Latte": "Gelato con ingredienti scelti e pochi gusti, tutti fatti bene.", "Giolitti": "Una delle gelaterie storiche di Roma, dal 1900: un classico.", "Otaleg": "Gusti originali e sorprendenti: il gelato da provare a Trastevere.", "Oro Bistrot (NH Hotel)": "Un aperitivo in terrazza con vista sull'Altare della Patria e i tetti di Roma.", "Terrazza Borromini": "Un drink al tramonto sopra Piazza Navona, con la cupola di Sant'Agnese davanti.", "Terrazza Les Étoiles": "La cupola di San Pietro così vicina sembra di poterla toccare."};
+T.en.op={"Pantheon": "Step inside and look up: the dome's oculus has been open to the sky for almost 2,000 years.", "Santa Maria sopra Minerva": "Plain outside, a starry blue ceiling inside: Rome's only Gothic church.", "Sant'Ignazio di Loyola": "Stand on the disc in the floor and look at the fake dome: an illusion that leaves you speechless.", "Galleria Doria Pamphilj": "A palace still lived in by the family, with Caravaggio and Velázquez almost all to yourself.", "Fontana di Trevi": "Go early in the morning or late at night: without the crowds it's another world. And toss a coin!", "Piazza Navona": "The loveliest square for a stroll, especially at sunset with the street artists.", "Altare della Patria": "Take the lift to the top: the view over the whole city is worth the ticket.", "Campo de' Fiori": "A market in the morning, the liveliest square in the centre at night.", "Castel Sant'Angelo": "Walk over the Bridge of Angels and climb to the terrace: St Peter's feels within reach.", "Basilica di San Pietro": "Climb the dome, even on foot: the view of the square and the city is unforgettable.", "Musei Vaticani": "Book online and go first thing in the morning: the Sistine Chapel will stay with you.", "Carrefour Express": "The handiest for quick shopping, a stone's throw from home.", "Caffè Gotico": "A small, cosy café behind the Pantheon, perfect for a cornetto and cappuccino.", "Casa Maddalena": "For an unhurried breakfast a few steps from the Pantheon.", "Pasticceria La Deliziosa": "Old-school pastries: try the maritozzi with cream.", "Celiachiamo LAB Prati": "An entirely gluten-free bakery: pastries you'd never guess are gluten-free.", "Le Altre Farine del Mulino": "Gluten-free a few steps from St Peter's, good for breakfast and more.", "Ginger": "When you fancy something fresh and light: salads, juices and bowls.", "Osteria da Fortunata": "Watch the ladies rolling pasta by hand in the window, then taste it.", "Trapizzino": "Rome's cleverest street food: pizza pockets filled with Roman stews.", "Ditirambo": "Roman cooking made with care, in an intimate little room near Campo de' Fiori.", "Pandalì": "Everything gluten-free, but loved by everyone.", "Gluten Free San Pietro": "Carbonara, lasagne and tiramisù, all gluten-free: you won't taste the difference.", "Buddy Veggy": "Vegan and indulgent, handy right in the centre.", "Écru": "Small and lovingly kept, with raw organic vegan dishes.", "Flower Burger": "Brightly coloured vegan burgers, fun even if you're not vegan.", "Eroi della Pizza": "Delicious pizza after a day at the Vatican Museums, and don't miss the supplì (fried rice balls)!", "Trattoria da Alfredo e Ada": "A tiny old-fashioned trattoria: you eat whatever is cooking that day.", "Alfredo alla Scrofa": "Fettuccine Alfredo was born here: try it where it all began.", "Sora Lella": "On Tiber Island, Roman cooking from a historic family.", "Taverna 51": "A true Trastevere osteria atmosphere, with generous portions.", "Tonnarello": "Cacio e pepe served in the pan: there's often a queue, but it moves fast.", "Nannarella": "A cheerful trattoria on a little Trastevere square, honest Roman food.", "Osteria Martino": "A small osteria in Trastevere's lanes, with a warm welcome.", "La Forchetta Romana": "At the foot of the Gianicolo: perfect for dinner after sunset up there.", "Osteria Sant'Uffizio": "A real Roman osteria steps from St Peter's, where tourists rarely end up.", "Pastasciutta": "Quick, delicious fresh pasta: perfect for lunch near the Vatican.", "200 Gradi": "Huge, generously filled sandwiches, ideal before or after the Museums.", "Venchi": "For chocolate lovers: the dark chocolate gelato is a must.", "La Romana": "Creamy gelato and melted chocolate poured into the cone: irresistible.", "Cremilla": "Delicious artisan gelato on the way between Castel Sant'Angelo and St Peter's.", "Neve di Latte": "Gelato with carefully chosen ingredients and a few flavours, all done well.", "Giolitti": "One of Rome's historic gelaterias, open since 1900: a classic.", "Otaleg": "Original, surprising flavours: the gelato to try in Trastevere.", "Oro Bistrot (NH Hotel)": "Aperitivo on a terrace overlooking the Altare della Patria and Rome's rooftops.", "Terrazza Borromini": "A sunset drink above Piazza Navona, with the dome of Sant'Agnese right in front.", "Terrazza Les Étoiles": "St Peter's dome so close you feel you could touch it."};
+T.fr.op={"Pantheon": "Entrez et levez les yeux : l'oculus de la coupole est ouvert sur le ciel depuis presque 2000 ans.", "Santa Maria sopra Minerva": "Sobre dehors, un plafond bleu étoilé dedans : la seule église gothique de Rome.", "Sant'Ignazio di Loyola": "Placez-vous sur le disque au sol et regardez la fausse coupole : une illusion bluffante.", "Galleria Doria Pamphilj": "Un palais encore habité par la famille, avec Caravage et Velázquez presque rien que pour vous.", "Fontana di Trevi": "Allez-y tôt le matin ou tard le soir : sans la foule, c'est autre chose. Et lancez la pièce !", "Piazza Navona": "La plus belle place pour flâner, surtout au coucher du soleil avec les artistes de rue.", "Altare della Patria": "Montez en ascenseur jusqu'en haut : la vue sur tout Rome vaut le billet.", "Campo de' Fiori": "Le marché le matin, la place la plus animée du centre le soir.", "Castel Sant'Angelo": "Arrivez par le pont des Anges et montez sur la terrasse : Saint-Pierre semble à deux pas.", "Basilica di San Pietro": "Montez sur la coupole, même à pied : la vue sur la place et sur Rome est inoubliable.", "Musei Vaticani": "Réservez en ligne et allez-y tôt le matin : la chapelle Sixtine vous restera au cœur.", "Carrefour Express": "Le plus pratique pour les courses rapides, à deux pas de la maison.", "Caffè Gotico": "Un petit café chaleureux derrière le Panthéon, parfait pour un cornetto et un cappuccino.", "Casa Maddalena": "Pour un petit-déjeuner sans se presser à deux pas du Panthéon.", "Pasticceria La Deliziosa": "Des pâtisseries à l'ancienne : goûtez les maritozzi à la crème.", "Celiachiamo LAB Prati": "Boulangerie entièrement sans gluten : des viennoiseries qu'on ne devinerait jamais sans gluten.", "Le Altre Farine del Mulino": "Sans gluten à deux pas de Saint-Pierre, pour le petit-déjeuner et plus encore.", "Ginger": "Quand vous avez envie de frais et léger : salades, jus et bowls.", "Osteria da Fortunata": "Regardez les dames étaler les pâtes à la main en vitrine, puis goûtez-les.", "Trapizzino": "Le street food romain le plus malin : une pizza fourrée de plats mijotés romains.", "Ditirambo": "Cuisine romaine soignée, dans une petite salle intime près du Campo de' Fiori.", "Pandalì": "Tout est sans gluten, mais tout le monde adore.", "Gluten Free San Pietro": "Carbonara, lasagnes et tiramisù, tout sans gluten : vous ne sentirez pas la différence.", "Buddy Veggy": "Végan et gourmand, pratique en plein centre.", "Écru": "Petit et soigné, avec des plats végans crus et bio.", "Flower Burger": "Des burgers végans très colorés, amusants même si vous n'êtes pas végan.", "Eroi della Pizza": "Une excellente pizza après une journée aux Musées du Vatican, et goûtez aussi les supplì (boulettes de riz frites) !", "Trattoria da Alfredo e Ada": "Une petite trattoria d'antan : on mange ce qu'il y a ce jour-là.", "Alfredo alla Scrofa": "Les fettuccine Alfredo sont nées ici : goûtez-les là où tout a commencé.", "Sora Lella": "Sur l'île Tibérine, la cuisine romaine d'une famille historique.", "Taverna 51": "Une vraie ambiance d'osteria du Trastevere, avec des portions généreuses.", "Tonnarello": "La cacio e pepe servie dans la poêle : il y a souvent la queue, mais ça avance vite.", "Nannarella": "Une trattoria joyeuse sur une petite place du Trastevere, cuisine romaine sans chichis.", "Osteria Martino": "Une petite osteria dans les ruelles du Trastevere, accueil chaleureux.", "La Forchetta Romana": "Au pied du Janicule : parfait pour dîner après le coucher du soleil là-haut.", "Osteria Sant'Uffizio": "Une vraie osteria romaine à deux pas de Saint-Pierre, où les touristes vont rarement.", "Pastasciutta": "Des pâtes fraîches rapides et délicieuses : parfait pour déjeuner près du Vatican.", "200 Gradi": "D'énormes sandwichs bien garnis, idéals avant ou après les Musées.", "Venchi": "Pour les amateurs de chocolat : la glace au chocolat noir est incontournable.", "La Romana": "Une glace crémeuse et du chocolat fondu versé dans le cornet : irrésistible.", "Cremilla": "Une délicieuse glace artisanale entre le Château Saint-Ange et Saint-Pierre.", "Neve di Latte": "Une glace aux ingrédients choisis et peu de parfums, tous réussis.", "Giolitti": "L'un des glaciers historiques de Rome, depuis 1900 : un classique.", "Otaleg": "Des parfums originaux et surprenants : la glace à goûter au Trastevere.", "Oro Bistrot (NH Hotel)": "Un apéritif en terrasse avec vue sur l'Autel de la Patrie et les toits de Rome.", "Terrazza Borromini": "Un verre au coucher du soleil au-dessus de la Piazza Navona, face à la coupole de Sant'Agnese.", "Terrazza Les Étoiles": "La coupole de Saint-Pierre si proche qu'on croirait pouvoir la toucher."};
+T.es.op={"Pantheon": "Entrad y mirad hacia arriba: el óculo de la cúpula lleva casi 2000 años abierto al cielo.", "Santa Maria sopra Minerva": "Sencilla por fuera, con un techo azul estrellado por dentro: la única iglesia gótica de Roma.", "Sant'Ignazio di Loyola": "Poneos sobre el disco del suelo y mirad la falsa cúpula: una ilusión que os dejará sin palabras.", "Galleria Doria Pamphilj": "Un palacio aún habitado por la familia, con Caravaggio y Velázquez casi solo para vosotros.", "Fontana di Trevi": "Id temprano por la mañana o tarde por la noche: sin gente es otra cosa. ¡Y tirad la moneda!", "Piazza Navona": "La plaza más bonita para pasear, sobre todo al atardecer con los artistas callejeros.", "Altare della Patria": "Subid en ascensor hasta arriba: la vista de toda Roma vale la entrada.", "Campo de' Fiori": "Mercado por la mañana y la plaza más animada del centro por la noche.", "Castel Sant'Angelo": "Llegad por el Puente de los Ángeles y subid a la terraza: San Pedro parece al alcance de la mano.", "Basilica di San Pietro": "Subid a la cúpula, aunque sea a pie: la vista de la plaza y de Roma es inolvidable.", "Musei Vaticani": "Reservad online e id a primera hora: la Capilla Sixtina se os quedará en el corazón.", "Carrefour Express": "El más cómodo para la compra rápida, a dos pasos de casa.", "Caffè Gotico": "Un bar pequeño y acogedor detrás del Panteón, perfecto para cornetto y capuchino.", "Casa Maddalena": "Para un desayuno tranquilo a dos pasos del Panteón.", "Pasticceria La Deliziosa": "Dulces como los de antes: probad los maritozzi con nata.", "Celiachiamo LAB Prati": "Panadería totalmente sin gluten: bollería que nunca diríais que es sin gluten.", "Le Altre Farine del Mulino": "Sin gluten a dos pasos de San Pedro, para el desayuno y mucho más.", "Ginger": "Cuando os apetezca algo fresco y ligero: ensaladas, zumos y bowls.", "Osteria da Fortunata": "Mirad a las señoras estirar la pasta a mano en el escaparate, y luego probadla.", "Trapizzino": "La comida callejera romana más ingeniosa: pizza rellena de guisos romanos.", "Ditirambo": "Cocina romana hecha con cariño, en un comedor íntimo cerca de Campo de' Fiori.", "Pandalì": "Todo sin gluten, pero le encanta a todo el mundo.", "Gluten Free San Pietro": "Carbonara, lasaña y tiramisú, todo sin gluten: no notaréis la diferencia.", "Buddy Veggy": "Vegano y goloso, cómodo en pleno centro.", "Écru": "Pequeño y cuidado, con platos veganos crudos y ecológicos.", "Flower Burger": "Hamburguesas veganas de colores, divertidas aunque no seáis veganos.", "Eroi della Pizza": "Una pizza buenísima tras un día en los Museos Vaticanos, ¡y probad también los supplì (croquetas de arroz)!", "Trattoria da Alfredo e Ada": "Una pequeña trattoria de las de antes: se come lo que hay ese día.", "Alfredo alla Scrofa": "Aquí nacieron los fettuccine Alfredo: probadlos donde empezó todo.", "Sora Lella": "En la Isla Tiberina, la cocina romana de una familia histórica.", "Taverna 51": "Ambiente de auténtica osteria del Trastevere, con raciones generosas.", "Tonnarello": "La cacio e pepe servida en la sartén: suele haber cola, pero avanza rápido.", "Nannarella": "Una trattoria alegre en una placita del Trastevere, cocina romana sin florituras.", "Osteria Martino": "Una pequeña osteria en las callejuelas del Trastevere, con un trato muy cálido.", "La Forchetta Romana": "Al pie del Gianicolo: perfecta para cenar después del atardecer allí arriba.", "Osteria Sant'Uffizio": "Una auténtica osteria romana a dos pasos de San Pedro, donde rara vez llegan los turistas.", "Pastasciutta": "Pasta fresca rápida y buenísima: perfecta para comer cerca del Vaticano.", "200 Gradi": "Bocadillos enormes y bien rellenos, ideales antes o después de los Museos.", "Venchi": "Para los amantes del chocolate: el helado de chocolate negro es imprescindible.", "La Romana": "Helado cremoso y chocolate fundido en el cucurucho: irresistible.", "Cremilla": "Helado artesano buenísimo de camino entre Castel Sant'Angelo y San Pedro.", "Neve di Latte": "Helado con ingredientes escogidos y pocos sabores, todos muy bien hechos.", "Giolitti": "Una de las heladerías históricas de Roma, desde 1900: un clásico.", "Otaleg": "Sabores originales y sorprendentes: el helado que hay que probar en el Trastevere.", "Oro Bistrot (NH Hotel)": "Un aperitivo en la terraza con vistas al Altar de la Patria y los tejados de Roma.", "Terrazza Borromini": "Una copa al atardecer sobre la Piazza Navona, con la cúpula de Sant'Agnese delante.", "Terrazza Les Étoiles": "La cúpula de San Pedro tan cerca que parece que se puede tocar."};
+T.de.op={"Pantheon": "Gehen Sie hinein und schauen Sie nach oben: Das Auge der Kuppel ist seit fast 2000 Jahren zum Himmel offen.", "Santa Maria sopra Minerva": "Außen schlicht, innen ein blauer Sternenhimmel: Roms einzige gotische Kirche.", "Sant'Ignazio di Loyola": "Stellen Sie sich auf die Scheibe im Boden und schauen Sie zur falschen Kuppel: eine verblüffende Illusion.", "Galleria Doria Pamphilj": "Ein noch bewohnter Familienpalast, mit Caravaggio und Velázquez fast für Sie allein.", "Fontana di Trevi": "Gehen Sie früh morgens oder spät abends hin: ohne Menschenmassen ist es ganz anders. Und werfen Sie eine Münze!", "Piazza Navona": "Der schönste Platz zum Bummeln, besonders bei Sonnenuntergang mit den Straßenkünstlern.", "Altare della Patria": "Fahren Sie mit dem Aufzug ganz nach oben: Der Blick über ganz Rom ist das Ticket wert.", "Campo de' Fiori": "Morgens Markt, abends der lebhafteste Platz im Zentrum.", "Castel Sant'Angelo": "Kommen Sie über die Engelsbrücke und steigen Sie auf die Terrasse: Der Petersdom scheint zum Greifen nah.", "Basilica di San Pietro": "Steigen Sie auf die Kuppel, auch zu Fuß: Der Blick über den Platz und Rom ist unvergesslich.", "Musei Vaticani": "Buchen Sie online und gehen Sie früh morgens: Die Sixtinische Kapelle bleibt Ihnen im Herzen.", "Carrefour Express": "Am praktischsten für den schnellen Einkauf, nur ein paar Schritte von der Wohnung.", "Caffè Gotico": "Ein kleines, gemütliches Café hinter dem Pantheon, perfekt für Cornetto und Cappuccino.", "Casa Maddalena": "Für ein entspanntes Frühstück wenige Schritte vom Pantheon.", "Pasticceria La Deliziosa": "Gebäck wie früher: Probieren Sie die Maritozzi mit Sahne.", "Celiachiamo LAB Prati": "Eine komplett glutenfreie Bäckerei: Gebäck, dem man es nicht anmerkt.", "Le Altre Farine del Mulino": "Glutenfrei wenige Schritte vom Petersdom, gut zum Frühstück und mehr.", "Ginger": "Wenn Sie Lust auf etwas Frisches und Leichtes haben: Salate, Säfte und Bowls.", "Osteria da Fortunata": "Schauen Sie den Damen zu, wie sie im Fenster Pasta von Hand ausrollen, und probieren Sie sie dann.", "Trapizzino": "Roms cleverstes Streetfood: Pizzataschen gefüllt mit römischen Schmorgerichten.", "Ditirambo": "Sorgfältige römische Küche in einem gemütlichen Raum nahe Campo de' Fiori.", "Pandalì": "Alles glutenfrei, aber alle lieben es.", "Gluten Free San Pietro": "Carbonara, Lasagne und Tiramisù, alles glutenfrei: Sie schmecken keinen Unterschied.", "Buddy Veggy": "Vegan und genussvoll, praktisch mitten im Zentrum.", "Écru": "Klein und liebevoll, mit rohen, biologischen veganen Gerichten.", "Flower Burger": "Knallbunte vegane Burger, lustig auch für Nicht-Veganer.", "Eroi della Pizza": "Köstliche Pizza nach einem Tag in den Vatikanischen Museen, und probieren Sie auch die Supplì (frittierte Reisbällchen)!", "Trattoria da Alfredo e Ada": "Eine kleine Trattoria wie früher: Es gibt, was an dem Tag gekocht wird.", "Alfredo alla Scrofa": "Hier wurden die Fettuccine Alfredo erfunden: Probieren Sie sie am Ursprungsort.", "Sora Lella": "Auf der Tiberinsel, römische Küche einer alteingesessenen Familie.", "Taverna 51": "Echte Trastevere-Osteria-Atmosphäre mit großzügigen Portionen.", "Tonnarello": "Cacio e Pepe in der Pfanne serviert: Oft gibt es eine Schlange, aber sie geht schnell.", "Nannarella": "Fröhliche Trattoria an einem kleinen Platz in Trastevere, ehrliche römische Küche.", "Osteria Martino": "Kleine Osteria in den Gassen von Trastevere, herzlicher Empfang.", "La Forchetta Romana": "Am Fuß des Gianicolo: perfekt zum Abendessen nach dem Sonnenuntergang dort oben.", "Osteria Sant'Uffizio": "Eine echte römische Osteria nahe dem Petersdom, wohin sich Touristen selten verirren.", "Pastasciutta": "Schnelle, köstliche frische Pasta: perfekt zum Mittagessen am Vatikan.", "200 Gradi": "Riesige, gut belegte Panini, ideal vor oder nach den Museen.", "Venchi": "Für Schokoladenfans: Das Zartbitter-Eis ist ein Muss.", "La Romana": "Cremiges Eis und geschmolzene Schokolade in der Waffel: unwiderstehlich.", "Cremilla": "Köstliches handgemachtes Eis auf dem Weg zwischen Engelsburg und Petersdom.", "Neve di Latte": "Eis aus ausgewählten Zutaten, wenige Sorten, alle sehr gut.", "Giolitti": "Eine der historischen Eisdielen Roms, seit 1900: ein Klassiker.", "Otaleg": "Originelle, überraschende Sorten: das Eis, das man in Trastevere probieren muss.", "Oro Bistrot (NH Hotel)": "Aperitivo auf der Terrasse mit Blick auf den Altare della Patria und die Dächer Roms.", "Terrazza Borromini": "Ein Drink bei Sonnenuntergang über der Piazza Navona, mit der Kuppel von Sant'Agnese vor Augen.", "Terrazza Les Étoiles": "Die Kuppel des Petersdoms so nah, als könnte man sie berühren."};
+T.it.more="Scopri di più nella sezione Roma unica";T.en.more="Find out more in the Unique Rome section";T.fr.more="Plus de détails dans la section Rome insolite";T.es.more="Descubre más en la sección Roma única";T.de.more="Mehr dazu im Abschnitt Einzigartiges Rom";
+// Password del Wi-Fi: qui c'e' solo la versione cifrata (AES-GCM).
+// La chiave arriva nel link mandato agli ospiti: ...?k=CHIAVE
+// Per cambiare password usa cripta-wifi.html (resta sul computer, non va su GitHub).
+const WIFI_ENC="XtF8XTgXzhzY4ZFgNZK1K6tglRBIwH7zdzhdIugh5n0l560-vA";
+let WIFI_PW="";
+const b64u=s=>Uint8Array.from(atob(s.replace(/-/g,"+").replace(/_/g,"/")),c=>c.charCodeAt(0));
+async function unlockWifi(){
+  try{
+    const k=new URLSearchParams(location.search).get("k"); if(!k) return;
+    const raw=b64u(WIFI_ENC), key=await crypto.subtle.importKey("raw",b64u(k),"AES-GCM",false,["decrypt"]);
+    WIFI_PW=new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:raw.slice(0,12)},key,raw.slice(12)));
+  }catch(e){WIFI_PW=""}
+  showPw();
+}
+function showPw(){
+  const d=document.getElementById("pw"); if(!d) return;
+  d.textContent=WIFI_PW||T[lang].pwNo; d.classList.toggle("pwno",!WIFI_PW);
+  document.getElementById("copy").hidden=!WIFI_PW;
+}
+T.en.pwNo="In the link we sent you on Airbnb";
+T.it.pwNo="Nel link che vi abbiamo mandato su Airbnb";
+T.fr.pwNo="Dans le lien que nous vous avons envoyé sur Airbnb";
+T.es.pwNo="En el enlace que os enviamos por Airbnb";
+T.de.pwNo="Im Link, den wir Ihnen über Airbnb geschickt haben";
+// Mappa: stessa proiezione usata per disegnare mappa-vie.svg
+const HOMEPOS=[41.89809,12.47930];
+const LAT1=41.9140,LON0=12.4500,CS=Math.cos(41.897*Math.PI/180),KM=1000/((12.4900-LON0)*CS);
+const mx=lon=>(lon-LON0)*CS*KM, my=lat=>(LAT1-lat)*KM;
+const VIEWS={near:[mx(HOMEPOS[1])-250,my(HOMEPOS[0])-250,500,500],vat:[0,110,560,560],wide:[0,40,1000,1000]};
+let view="near",filter="all",sel=-1,lang="en";
+P.forEach((p,i)=>{p.n=null});
+let n=0; P.forEach(p=>{if(p[3]) p.n=++n});
+function route(q){return "https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(HOME)+"&destination="+encodeURIComponent(q)+"&travelmode=walking"}
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function loadStreets(){
+  // le vie stanno in mappa-vie.js (funziona anche aprendo il file dal computer)
+  const t=window.MAPPA_SVG||""; const m=t.match(/<svg[^>]*>([\s\S]*)<\/svg>/);
+  if(m) document.getElementById("streets").innerHTML=m[1];
+}
+function drawMarkers(){
+  const pts=[]; P.forEach((p,i)=>{ if(p.n&&(filter==="all"||p[1]===filter)) pts.push({i,p,x0:mx(p[4]),y0:my(p[3])}) });
+  let v=VIEWS[view];
+  if(view==="wide"){ // inquadra tutti i punti visibili (e la casa)
+    const xs=pts.map(q=>q.x0).concat(mx(HOMEPOS[1])), ys=pts.map(q=>q.y0).concat(my(HOMEPOS[0]));
+    const x1=Math.min(...xs),x2=Math.max(...xs),y1=Math.min(...ys),y2=Math.max(...ys)+(Math.max(...ys)-Math.min(...ys))*.12; // spazio per i pulsanti in basso
+    const side=Math.max(x2-x1,y2-y1,300)*1.12;
+    const cl=(c,max)=>side>=max?(max-side)/2:Math.min(Math.max(c-side/2,0),max-side); // resta dentro la mappa disegnata
+    v=[cl((x1+x2)/2,1000),cl((y1+y2)/2,1075),side,side];
+  }
+  const r=v[2]/(view==="wide"?50:40), fs=r*1.15;
+  document.getElementById("mapsvg").setAttribute("viewBox",v.map(n=>n.toFixed(1)).join(" "));
+  // allontana i segni che si sovrappongono; una linea sottile porta al punto vero
+  pts.forEach(q=>{q.x=q.x0;q.y=q.y0});
+  const hx0=mx(HOMEPOS[1]),hy0=my(HOMEPOS[0]),D=r*2.15;
+  for(let it=0;it<80;it++){
+    let moved=false;
+    for(let a=0;a<pts.length;a++){
+      const A=pts[a];
+      for(let b=a+1;b<pts.length;b++){
+        const B=pts[b]; let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy);
+        if(d<D){ if(d<.01){dx=Math.cos(a+b);dy=Math.sin(a+b);d=1} const k=(D-d)/2/d; A.x-=dx*k;A.y-=dy*k;B.x+=dx*k;B.y+=dy*k; moved=true }
+      }
+      let dx=A.x-hx0,dy=A.y-(hy0+r*.8),d=Math.hypot(dx,dy),H=r*3.1; // lascia libera la casa
+      if(d<H){ if(d<.01){dx=0;dy=-1;d=1} const k=(H-d)/d; A.x+=dx*k;A.y+=dy*k; moved=true }
+    }
+    if(!moved) break;
+  }
+  let lines="",g="";
+  pts.forEach(({i,p,x0,y0,x,y})=>{
+    const on=i===sel;
+    if(Math.hypot(x-x0,y-y0)>r*.4) lines+=`<line x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" class="lead c-${p[1]}" stroke-width="${(r*.12).toFixed(2)}"/><circle cx="${x0.toFixed(1)}" cy="${y0.toFixed(1)}" r="${(r*.22).toFixed(1)}" class="pin c-${p[1]}"/>`;
+    g+=`<g class="mk c-${p[1]}${on?" on":""}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(p[0])}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(on?r*1.3:r).toFixed(1)}"/><text x="${x.toFixed(1)}" y="${y.toFixed(1)}" dy=".36em" font-size="${(on?fs*1.2:fs).toFixed(1)}">${p.n}</text></g>`;
+  });
+  // il segno selezionato va sopra gli altri
+  g=lines+g.replace(/(<g class="mk[^"]* on"[\s\S]*?<\/g>)([\s\S]*)$/,"$2$1");
+  const hx=mx(HOMEPOS[1]),hy=my(HOMEPOS[0]),s=r*1.25;
+  g+=`<g class="home"><rect x="${(hx-s).toFixed(1)}" y="${(hy-s).toFixed(1)}" width="${(2*s).toFixed(1)}" height="${(2*s).toFixed(1)}" rx="${(s*.35).toFixed(1)}"/><path d="M${hx-s*.55} ${hy+s*.05} L${hx} ${hy-s*.5} L${hx+s*.55} ${hy+s*.05} M${hx-s*.35} ${hy-.1*s} V${hy+s*.5} H${hx+s*.35} V${hy-.1*s}" fill="none" stroke-width="${(r*.16).toFixed(2)}" stroke-linejoin="round"/><text x="${hx}" y="${(hy+s*2.1).toFixed(1)}" font-size="${(fs*1.05).toFixed(1)}">${esc(T[lang].home)}</text></g>`;
+  document.getElementById("marks").innerHTML=g;
+}
+function showInfo(){
+  const box=document.getElementById("mapinfo"),t=T[lang];
+  if(sel<0){box.hidden=true;return}
+  const p=P[sel]; box.hidden=false;
+  box.innerHTML=`<span class="badge c-${p[1]}">${p.n||"·"}</span><span class="nm">${esc(p[0])}<small>${t.cats[p[1]]}${p[5]?" · "+(p[5]==2?t.vg:t.gf):""}</small>${t.op[p[0]]?`<em class="op">${t.op[p[0]]}</em>`:""}</span><a class="btn" href="${route(p[2])}" target="_blank" rel="noopener">${t.route} →</a>`;
+}
+function select(i){sel=i;drawMarkers();showInfo();
+  document.querySelectorAll("#placelist li").forEach(li=>li.classList.toggle("on",+li.dataset.i===i));}
+function renderPlaces(){
+  const t=T[lang];
+  document.getElementById("mapfilters").innerHTML=["all","sight","uniq","bf","eat","ice","super","drink"].map(c=>`<button type="button" class="c-${c}" data-c="${c}" aria-pressed="${filter===c}">${c==="all"?t.mAll:t.cats[c]}</button>`).join("");
+  document.getElementById("mapzoom").innerHTML=["near","vat","wide"].map(v=>`<button type="button" data-v="${v}" aria-pressed="${view===v}">${{near:t.mNear,vat:t.mVat,wide:t.mWide}[v]}</button>`).join("");
+  let h="";
+  ["sight","uniq","bf","eat","ice","super","drink"].forEach(c=>{
+    if(filter!=="all"&&filter!==c) return;
+    h+=`<h3 class="cat">${t.cats[c]}</h3>${c==="uniq"?`<a class="op more" href="#unique">${t.more} →</a>`:""}<ul class="places">`;
+    P.forEach((p,i)=>{ if(p[1]!==c) return; h+=`<li data-i="${i}" class="${i===sel?"on":""}"><span class="badge c-${c}">${p.n||"·"}</span><span class="nm">${esc(p[0])}${p[5]?`<small>${p[5]==2?t.vg:t.gf}</small>`:""}${t.op[p[0]]?`<em class="op">${t.op[p[0]]}</em>`:""}</span><span class="dots"></span><a href="${route(p[2])}" target="_blank" rel="noopener">${t.route} →</a></li>`});
+    h+="</ul>";
+  });
+  document.getElementById("placelist").innerHTML=h;
+  document.getElementById("uniqlist").innerHTML=P.map((p,i)=>p[1]!=="uniq"?"":`<article><h3><span class="badge c-uniq">${p.n}</span>${esc(p[0])}</h3><p>${t[p[6]]||""}</p><div class="row"><a class="btn sm" href="${route(p[2])}" target="_blank" rel="noopener">${t.route} →</a><a class="btn ghost sm" href="#around" data-show="${i}">${t.onMap}</a></div></article>`).join("");
+  drawMarkers(); showInfo();
+}
+function render(l){
+  const t=T[l];
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i]").forEach(e=>{const v=t[e.dataset.i]; if(v!=null) e.innerHTML=v});
+  document.querySelectorAll(".langs button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+  lang=l; renderPlaces();
+  document.getElementById("rulelist").innerHTML=t.rules.map(r=>`<li>${r}</li>`).join("");
+  let saved={}; try{saved=JSON.parse(localStorage.getItem("co")||"{}")}catch(e){}
+  document.getElementById("checklist").innerHTML=t.co.map((c,i)=>`<li><label><input type="checkbox" id="co${i}" ${saved[i]?"checked":""}><span>${c}</span></label></li>`).join("");
+  try{localStorage.setItem("lang",l)}catch(e){}
+  showPw();
+  if(typeof route_==="function"&&!document.getElementById("view").hidden) route_();
+}
+document.querySelectorAll(".langs button").forEach(b=>b.addEventListener("click",()=>render(b.dataset.l)));
+document.getElementById("checklist").addEventListener("change",e=>{
+  const s={}; document.querySelectorAll("#checklist input").forEach((c,i)=>{if(c.checked)s[i]=1});
+  try{localStorage.setItem("co",JSON.stringify(s))}catch(e){}
+  const all=[...document.querySelectorAll("#checklist input")];
+  if(e.target.checked&&all.every(c=>c.checked)) confetti();
+});
+function confetti(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const c=document.createElement("canvas"); c.id="confetti"; document.body.appendChild(c);
+  const x=c.getContext("2d"),W=c.width=innerWidth*devicePixelRatio,H=c.height=innerHeight*devicePixelRatio,d=devicePixelRatio;
+  c.style.width=innerWidth+"px"; c.style.height=innerHeight+"px";
+  const col=["#9a5b2e","#1f4d3a","#b0476e","#8a6d1f","#6a4c93","#2e7d8c","#e0a575"];
+  const ps=Array.from({length:160},()=>({x:W/2+(Math.random()-.5)*W*.3,y:H*.35,vx:(Math.random()-.5)*14*d,vy:(-Math.random()*14-6)*d,w:(6+Math.random()*6)*d,h:(3+Math.random()*4)*d,a:Math.random()*6,va:(Math.random()-.5)*.3,c:col[Math.floor(Math.random()*col.length)]}));
+  let t=0;(function f(){
+    x.clearRect(0,0,W,H); t++;
+    ps.forEach(p=>{p.vy+=.35*d;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.a+=p.va;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-p.w/2,-p.h/2,p.w,p.h);x.restore()});
+    if(t<200) requestAnimationFrame(f); else c.remove();
+  })();
+}
+document.getElementById("copy").addEventListener("click",async e=>{
+  const b=e.currentTarget,l=document.documentElement.lang;
+  if(!WIFI_PW)return;
+  try{await navigator.clipboard.writeText(WIFI_PW);b.textContent=T[l].copied}
+  catch(err){const r=document.createRange();r.selectNodeContents(document.getElementById("pw"));const s=getSelection();s.removeAllRanges();s.addRange(r)}
+});
+// Sezioni: la home mostra le schede, ogni sezione si apre da sola (indirizzo #nome)
+const ORDER=[...document.querySelectorAll("#view section")].map(x=>x.id.slice(4));
+function label(id){const a=document.querySelector(`.side a[data-s="${id}"]`);return a?a.textContent:id}
+function route_(){
+  const id=location.hash.slice(1), ok=ORDER.includes(id);
+  document.getElementById("home").hidden=ok; document.getElementById("view").hidden=!ok;
+  if(!ok) return;
+  document.querySelectorAll("#view section").forEach(x=>x.classList.toggle("on",x.id==="sec-"+id));
+  document.querySelectorAll(".side a[data-s]").forEach(a=>a.classList.toggle("on",a.dataset.s===id));
+  const k=ORDER.indexOf(id),pv=ORDER[k-1],nx=ORDER[k+1],t=T[lang];
+  document.getElementById("pn").innerHTML=(pv?`<a href="#${pv}">← ${t.prev}<b>${label(pv)}</b></a>`:"")+(nx?`<a class="nx" href="#${nx}">${t.next} →<b>${label(nx)}</b></a>`:"");
+}
+window.addEventListener("hashchange",()=>{route_();window.scrollTo(0,0)});
+document.getElementById("uniqlist").addEventListener("click",e=>{const a=e.target.closest("[data-show]");if(!a)return;const i=+a.dataset.show;filter="all";view="wide";sel=i;setTimeout(()=>{renderPlaces();select(i)},0)});
+let start="en";
+try{const s=localStorage.getItem("lang"); if(s&&T[s]) start=s; else {const n=(navigator.language||"en").slice(0,2); if(T[n]) start=n}}catch(e){}
+loadStreets(); render(start); route_(); unlockWifi();
+document.getElementById("mapfilters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;filter=b.dataset.c;if(sel>=0&&filter!=="all"&&P[sel][1]!==filter)sel=-1;renderPlaces()});
+document.getElementById("mapzoom").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;view=b.dataset.v;renderPlaces()});
+document.getElementById("marks").addEventListener("click",e=>{const g=e.target.closest(".mk");if(g)select(+g.dataset.i)});
+document.getElementById("marks").addEventListener("keydown",e=>{const g=e.target.closest(".mk");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();select(+g.dataset.i)}});
+document.getElementById("placelist").addEventListener("click",e=>{if(e.target.closest("a"))return;const li=e.target.closest("li");if(!li)return;const i=+li.dataset.i;if(!P[i].n)return;if(view==="near"){const v=VIEWS.near,x=mx(P[i][4]),y=my(P[i][3]);if(x<v[0]||x>v[0]+v[2]||y<v[1]||y>v[1]+v[3])view="wide"}renderPlaces();select(i);document.querySelector(".map").scrollIntoView({behavior:"smooth",block:"center"})});
+</script>
